@@ -1,0 +1,37 @@
+body.pywal{{
+  --accent: {color1};
+  --accent-overlay: {color1};
+  --navbar-accent: {color7};
+  --background: {background};
+  --body-background: {background};
+  --background-darker: var(--body-background);
+  --current-background: var(--body-background);
+  --navbar-background: {background};
+  --navbar-active-background: {color0};
+  --gradient-body-background: linear-gradient(
+    90deg,
+    var(--background-darker) -32px,
+    var(--body-background) 64px,
+    var(--body-background) 100%
+  );
+  --input-background: {color0};
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --success: {color4};
+  --success-hover: {color2};
+  --primary: {color5};
+  --primary-hover: {color0};
+  --danger: {color9};
+  --danger-hover: {color10};
+  --anticheat-denied: {color9};
+  --anticheat-broken: {color1};
+  --anticheat-running: {color5};
+  --anticheat-supported: {color6};
+  --anticheat-planned: {color13};
+  --text-title: {foreground};
+  --icons-background: {color0};
+  --action-icon: {foreground};
+  --action-icon-hover: {color11};
+  --action-icon-active: {color3};
+  --icon-disabled: {color8};
+}}
