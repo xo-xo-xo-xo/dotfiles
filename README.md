@@ -63,3 +63,18 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 ## Credit
 
 Some scripts modified from [@Narsell](https://github.com/Narsell/dotfiles)'s and [@LierB](https://github.com/LierB/dotfiles)'s dotfiles
+
+
+## Random notes
+
+* Waybar's system tray module breaks occasionally. As far as I'm aware, the workaround is attacking ```pkill kded6``` to your waybar reload scripts.
+* ```~/.themes/pywal/gtk-3.0/colors.css``` symlinked to ```~/.cache/wal/colors-waybar.css```
+* ```~/.config/heroic/heroic-themes-main/pywal/pywal.css``` symlinked to ```~/.cache/wal/heroic-pywal.css```
+*  ```~/.local/share/TauonMusicBox/theme/colors-tauon.ttheme``` symlinked to ```~/.cache/wal/colors-tauon.ttheme```
+* ```~/scripts/setup_symlinks``` for rofi theme symlinks.
+
+  ## Todo
+
+  * Probably migrate to matugen, pywal is jank.
+  * Consolidate/clean up scripts.
+  * Better Swaync
