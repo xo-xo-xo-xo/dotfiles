@@ -7,10 +7,11 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 
 ### Screenshots
-<img width="1280" height="720" alt="2025-09-26-232552_hyprshot" src="https://github.com/user-attachments/assets/a26c85ac-5f91-4d2f-9d40-8c7940d66e7c" />
-<img width="1280" height="720" alt="2025-09-26-233310_hyprshot" src="https://github.com/user-attachments/assets/1bb5fb4c-2a3c-4e08-a8e2-00d1e8f4be45" />
-<img width="1280" height="720" alt="2025-09-26-233725_hyprshot" src="https://github.com/user-attachments/assets/b39d0957-d77f-46ee-a598-e25ea2fc9dd4" />
-<img width="1280" height="720" alt="2025-09-26-234217_hyprshot" src="https://github.com/user-attachments/assets/537d5ca5-2b28-4661-8841-f4163af77bd4" />
+<img width="2558" height="1441" alt="2025-09-26-232552_hyprshot" src="https://github.com/user-attachments/assets/5dc4dd71-4e60-4534-ab74-c9d621633d20" />
+<img width="2557" height="1435" alt="2025-09-26-233310_hyprshot" src="https://github.com/user-attachments/assets/23ebddd0-99b0-4a30-8a98-00d03a0234b1" />
+<img width="2558" height="1441" alt="2025-09-26-233725_hyprshot" src="https://github.com/user-attachments/assets/ae2b1a80-e770-49ce-b21b-10390ce277ab" />
+<img width="2560" height="1441" alt="2025-09-26-234217_hyprshot" src="https://github.com/user-attachments/assets/2a840ac2-b2f9-4a78-a910-ba9a98e4138c" />
+<img width="2556" height="1440" alt="2025-09-26-234258_hyprshot" src="https://github.com/user-attachments/assets/ade3c02c-db93-447e-b281-50f160e2a11c" />
 
 
 
