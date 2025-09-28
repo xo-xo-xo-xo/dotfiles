@@ -1,7 +1,7 @@
 # Personal use dotfiles 
 
 
-These are the dotfiles I use on my own machine. They rely heavily on waypaper post commands and scripts to integrate pywal into every program I use.
+These are the dotfiles I use on my own machine. They rely heavily on waypaper post commands and scripts to dynamically integrate pywal into every program I use.
 
 Feel free to write an issue if you're having trouble using these (please don't, they're a mess).
 
@@ -82,7 +82,7 @@ Do your own research before installing AUR packages.
 | firefox | heroic launcher
 | discord         | obsidian
 | vs code | filepickers? not sure how to reload..
-
+|         | 4chanx/oneechan, need to re-import every generated theme
 
   ## Todo
 
@@ -93,6 +93,9 @@ Do your own research before installing AUR packages.
 - [x] Custom SwayNC
 - [ ] ~Installation script?~ nope
 - [ ] Make a better color backend for more variety in themes
+- [ ] qBittorrent theme 
+- [ ] More website userstyles?
+- [ ] GTK apps
 
 ## Credit
 
