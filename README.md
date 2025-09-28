@@ -17,6 +17,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 ---
 
+
 # Programs used
 
 | purpose           | program
@@ -28,36 +29,35 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 | wallpaper tool | [waypaper](https://github.com/anufrievroman/waypaper)
 | bar | [waybar](https://github.com/Alexays/Waybar)
 | notifications | [swaync](https://github.com/ErikReider/SwayNotificationCenter)
-| music player | [rmpc](https://github.com/mierak/rmpc)
 | launcher/various | [rofi](https://github.com/davatorium/rofi)
-| qt theming  | [kvantum](https://github.com/tsujan/Kvantum)
+| clipboard manager |  [cliphist](https://github.com/sentriz/cliphist)
+| terminal  | [kitty](https://github.com/kovidgoyal/kitty)
+| terminal shell | [fish](https://github.com/fish-shell/fish-shell)
+| fetch program | [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+| music player | [rmpc](https://github.com/mierak/rmpc)
+| music player (gui option) | [tauon music box](https://github.com/Taiko2k/Tauon)
+| mpd mpris support (for waybar) | [mpd-mpris](https://github.com/natsukagami/mpd-mpris)
+| mpd scrobbling support | [mpdscribble](https://github.com/MusicPlayerDaemon/mpdscribble)
+| audio visualizer (rmpc) | [cava](https://github.com/karlstav/cava)
 | media player | [mpv (with custom OSC)](https://github.com/Samillion/ModernZ) 
 | game launcher | [heroic games launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)
-| terminal shell | [fish](https://github.com/fish-shell/fish-shell)
 | text editor | [code oss](https://github.com/microsoft/vscode) + [pywal extension](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) 
-| mpd mpris support (for waybar) | [mpd-mpris](https://github.com/natsukagami/mpd-mpris)
-| clipboard manager |  [cliphist](https://github.com/sentriz/cliphist)
+| markdown notes | [obsidian](https://obsidian.md/)
 | qt theming |  [qt6ct](https://github.com/trialuser02/qt6ct)
+| qt theming  | [kvantum](https://github.com/tsujan/Kvantum)
 | gtk theming |  [nwg-look](https://github.com/nwg-piotr/nwg-look)
-| fetch program | [fastfetch](https://github.com/fastfetch-cli/fastfetch)
-| terminal  | [kitty](https://github.com/kovidgoyal/kitty)
-| audio visualizer (rmpc) | [cava](https://github.com/karlstav/cava)
+| qt icons | [breeze-chameleon](https://github.com/L4ki/Breeze-Chameleon-Icons)
 | theme generation | [pywal16](https://github.com/eylles/pywal16)
 | discord theme generation | [pywal-discord](https://github.com/NecRaul/pywal-discord)
 | firefox theme generation | [pywalfox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/)
-| qt icons | [breeze-chameleon](https://github.com/L4ki/Breeze-Chameleon-Icons)
+
 
 
 
 ## Installing the requirements (Arch-based)
 
-``` $ pacman -S hyprland hypridle hyprlock hyprshot waybar swaync rofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code```
+``` $ yay -S hyprland hypridle hyprlock hyprshot waybar swaync rofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
 
---- 
-
-## AUR
-
-``` $ yay -S waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
 
 
 ## Credit
@@ -72,6 +72,17 @@ Some scripts modified from [@Narsell](https://github.com/Narsell/dotfiles)'s and
 * ```~/.config/heroic/heroic-themes-main/pywal/pywal.css``` symlinked to ```~/.cache/wal/heroic-pywal.css```
 *  ```~/.local/share/TauonMusicBox/theme/colors-tauon.ttheme``` symlinked to ```~/.cache/wal/colors-tauon.ttheme```
 * ```~/scripts/setup_symlinks``` for rofi theme symlinks.
+
+
+| reloads colors instantly        | needs restart
+| :---------          | :-------  
+| kitty/cli apps             | mpv (history script added for restarts) 
+| waybar     |  qt/gtk
+| swaync    | waypaper
+| firefox | heroic launcher
+| discord         | obsidian
+| vs code |
+
 
   ## Todo
 
