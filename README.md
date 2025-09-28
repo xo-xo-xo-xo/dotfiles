@@ -22,43 +22,44 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 | purpose           | program
 | :---------          | :-------  
-| window manager      | [hyprland](https://github.com/hyprwm/Hyprland)
-| idle daemon         | [hypridle](https://github.com/hyprwm/hypridle)
-| lockscreen | [hyprlock](https://github.com/hyprwm/hyprlock)
-| screenshot utility | [hyprshot](https://github.com/Gustash/Hyprshot)
-| wallpaper tool | [waypaper](https://github.com/anufrievroman/waypaper)
-| bar | [waybar](https://github.com/Alexays/Waybar)
-| notifications | [swaync](https://github.com/ErikReider/SwayNotificationCenter)
-| launcher/various | [rofi](https://github.com/davatorium/rofi)
-| clipboard manager |  [cliphist](https://github.com/sentriz/cliphist)
-| terminal  | [kitty](https://github.com/kovidgoyal/kitty)
-| terminal shell | [fish](https://github.com/fish-shell/fish-shell)
-| fetch program | [fastfetch](https://github.com/fastfetch-cli/fastfetch)
-| music player | [rmpc](https://github.com/mierak/rmpc)
-| music player (gui option) | [tauon music box](https://github.com/Taiko2k/Tauon)
-| mpd mpris support (for waybar) | [mpd-mpris](https://github.com/natsukagami/mpd-mpris)
-| mpd scrobbling support | [mpdscribble](https://github.com/MusicPlayerDaemon/mpdscribble)
-| audio visualizer (rmpc) | [cava](https://github.com/karlstav/cava)
-| media player | [mpv (with custom OSC)](https://github.com/Samillion/ModernZ) 
-| game launcher | [heroic games launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)
-| text editor | [code oss](https://github.com/microsoft/vscode) + [pywal extension](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) 
-| markdown notes | [obsidian](https://obsidian.md/)
-| qt theming |  [qt6ct](https://github.com/trialuser02/qt6ct)
-| qt theming  | [kvantum](https://github.com/tsujan/Kvantum)
-| gtk theming |  [nwg-look](https://github.com/nwg-piotr/nwg-look)
-| qt icons | [breeze-chameleon](https://github.com/L4ki/Breeze-Chameleon-Icons)
-| theme generation | [pywal16](https://github.com/eylles/pywal16)
-| discord theme generation | [pywal-discord](https://github.com/NecRaul/pywal-discord)
-| firefox theme generation | [pywalfox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/)
+| Window manager      | [hyprland](https://github.com/hyprwm/Hyprland)
+| Idle daemon         | [hypridle](https://github.com/hyprwm/hypridle)
+| Lockscreen | [hyprlock](https://github.com/hyprwm/hyprlock)
+| Screenshot utility | [hyprshot](https://github.com/Gustash/Hyprshot)
+| Wallpaper tool | [waypaper](https://github.com/anufrievroman/waypaper)
+| Bar | [waybar](https://github.com/Alexays/Waybar)
+| Notifications | [swaync](https://github.com/ErikReider/SwayNotificationCenter)
+| Launcher/various | [rofi](https://github.com/davatorium/rofi)
+| Kaomoji picker | [wofi](https://sr.ht/~scoopta/wofi/)
+| Clipboard manager |  [cliphist](https://github.com/sentriz/cliphist)
+| Terminal  | [kitty](https://github.com/kovidgoyal/kitty)
+| Terminal shell | [fish](https://github.com/fish-shell/fish-shell)
+| Fetch program | [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+| Music player | [rmpc](https://github.com/mierak/rmpc)
+| Music player (gui option) | [tauon music box](https://github.com/Taiko2k/Tauon)
+| MPD mpris support (for waybar) | [mpd-mpris](https://github.com/natsukagami/mpd-mpris)
+| MPD scrobbling support | [mpdscribble](https://github.com/MusicPlayerDaemon/mpdscribble)
+| Audio visualizer (rmpc) | [cava](https://github.com/karlstav/cava)
+| Media player | [mpv (with custom OSC)](https://github.com/Samillion/ModernZ) 
+| Game launcher | [heroic games launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)
+| Text editor | [code oss](https://github.com/microsoft/vscode) + [pywal extension](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) 
+| Markdown notes | [obsidian](https://obsidian.md/)
+| Qt theming |  [qt6ct](https://github.com/trialuser02/qt6ct)
+| Qt theming  | [kvantum](https://github.com/tsujan/Kvantum)
+| Qt icons | [breeze-chameleon](https://github.com/L4ki/Breeze-Chameleon-Icons)
+| GTK theming |  [nwg-look](https://github.com/nwg-piotr/nwg-look)
+| Theme generation | [pywal16](https://github.com/eylles/pywal16)
+| Discord theme generation | [pywal-discord](https://github.com/NecRaul/pywal-discord)
+| Firefox theme generation | [pywalfox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/)
 
 
 
 
 ## Installing the requirements (Arch-based)
 
-``` $ yay -S hyprland hypridle hyprlock hyprshot waybar swaync rofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
+``` $ yay -S hyprland hypridle hyprlock hyprshot waybar swaync rofi wofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
 
-
+Do your own research before installing AUR packages.
 
 
 ## Random notes
@@ -70,7 +71,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 * ```~/scripts/setup_symlinks``` for rofi theme symlinks.
 
 
-| reloads colors instantly        | needs restart
+| Reloads colors instantly        | Needs restart
 | :---------          | :-------  
 | kitty/cli apps             | mpv (history script added for restarts) 
 | waybar     |  qt/gtk
@@ -82,9 +83,12 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
   ## Todo
 
-  * Probably migrate to matugen, pywal is jank.
-  * Consolidate/clean up scripts.
-  * Better Swaync
+- [ ] Consider switching to matugen, pywal is jank.
+
+- [ ] Clean up scripts (especially symlinks). 
+
+- [ ] Custom SwayNC
+- [ ] ~Installation script?~ nope
 
 ## Credit
 
