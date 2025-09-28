@@ -7,11 +7,12 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 
 ### Screenshots
-<img width="2558" height="1441" alt="2025-09-26-232552_hyprshot" src="https://github.com/user-attachments/assets/5dc4dd71-4e60-4534-ab74-c9d621633d20" />
-<img width="2557" height="1435" alt="2025-09-26-233310_hyprshot" src="https://github.com/user-attachments/assets/23ebddd0-99b0-4a30-8a98-00d03a0234b1" />
-<img width="2558" height="1441" alt="2025-09-26-233725_hyprshot" src="https://github.com/user-attachments/assets/ae2b1a80-e770-49ce-b21b-10390ce277ab" />
-<img width="2560" height="1441" alt="2025-09-26-234217_hyprshot" src="https://github.com/user-attachments/assets/2a840ac2-b2f9-4a78-a910-ba9a98e4138c" />
-<img width="2559" height="1441" alt="2025-09-27-234647_hyprshot" src="https://github.com/user-attachments/assets/acae7a8c-9b07-4be5-b884-4fce627e5d9a" />
+
+<img width="2559" height="1441" alt="2025-09-28-050312_hyprshot" src="https://github.com/user-attachments/assets/9f06a24a-8ac0-4d1d-86a1-c9052e00961e" />
+<img width="2560" height="1441" alt="2025-09-28-050003_hyprshot" src="https://github.com/user-attachments/assets/7773e4bc-5a2b-4992-9b99-e0871a7e51f3" />
+<img width="2559" height="1441" alt="2025-09-28-050605_hyprshot" src="https://github.com/user-attachments/assets/785853c1-2223-4dab-afee-bfee1ded497f" />
+<img width="2559" height="1441" alt="2025-09-28-050803_hyprshot" src="https://github.com/user-attachments/assets/23d3ffdd-fb0c-49b2-addc-8372dbd35061" />
+<img width="2560" height="1441" alt="2025-09-28-051207_hyprshot" src="https://github.com/user-attachments/assets/049b3a1e-354f-4228-8009-c7eae28719b6" />
 
 
 
@@ -78,7 +79,7 @@ Do your own research before installing AUR packages.
 | swaync    | waypaper
 | firefox | heroic launcher
 | discord         | obsidian
-| vs code |
+| vs code | filepickers? not sure how to reload..
 
 
   ## Todo
@@ -87,7 +88,7 @@ Do your own research before installing AUR packages.
 
 - [ ] Clean up scripts (especially symlinks). 
 
-- [ ] Custom SwayNC
+- [x] Custom SwayNC
 - [ ] ~Installation script?~ nope
 
 ## Credit
