@@ -95,7 +95,7 @@ Do your own research before installing AUR packages.
 - [ ] Make a better color backend for more variety in themes
 - [ ] qBittorrent theme 
 - [ ] More website userstyles?
-- [ ] GTK apps
+- [ ] GTK4 apps, horrible toolkit. 
 
 ## Credit
 
