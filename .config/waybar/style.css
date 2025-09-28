@@ -42,7 +42,7 @@ window#waybar {
 #tray{
 background-color: alpha(@background, 0.7);
 border-radius: 5px;
-border: 3px solid alpha(#0f0f0e, 0.5);
+border: 2px solid alpha(#0f0f0e, 0.5);
 
 padding: 0px 4px 0px 4px;
 margin: 2px 1px;
@@ -125,6 +125,9 @@ font-size: 16px;
 #pulseaudio:hover,
 #language:hover,
 #custom-control-center:hover,
+#memory:hover,
+#cpu:hover,
+#pulseaudio-slider:hover,
 #workspaces button:hover {
 background-color: alpha(@background, 0.77); 
 color: @color2;

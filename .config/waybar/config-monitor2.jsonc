@@ -28,10 +28,10 @@
          "headphone": " ",
          "headset": " ",
          "default": [
-            "<span color='#716366'> </span>",
-            "<span color='#9f8b78'> </span>",
-            "<span color='#cab9a9'> </span>",
-            "<span color='#6c6358'>  </span>"
+            "<span color='#2f4e69'> </span>",
+            "<span color='#3a6f99'> </span>",
+            "<span color='#698db3'> </span>",
+            "<span color='#56616a'>  </span>"
          ]
       },
       "tooltip-format": "{desc}",
@@ -39,8 +39,8 @@
       "on-click-right": "pavucontrol"
    },
    "clock": {
-      "format": "<span color='#716366' rise='1500'> </span>{:L%A %m/%d <span color='#9f8b78' rise='1200'>  </span>%I:%M %p}",
-      "format-alt": "<span color='#cab9a9'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#2f4e69' rise='1500'> </span>{:L%A %m/%d <span color='#3a6f99' rise='1200'>  </span>%I:%M %p}",
+      "format-alt": "<span color='#698db3'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -50,11 +50,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#6c6358'><b>{}</b></span>",
-            "days": "<span color='#716366'><b>{}</b></span>",
-            "weeks": "<span color='#9f8b78'><b>W{}</b></span>",
-            "weekdays": "<span color='#cab9a9'><b>{}</b></span>",
-            "today": "<span color='#6c6358'><b><u>{}</u></b></span>"
+            "months": "<span color='#56616a'><b>{}</b></span>",
+            "days": "<span color='#2f4e69'><b>{}</b></span>",
+            "weeks": "<span color='#3a6f99'><b>W{}</b></span>",
+            "weekdays": "<span color='#698db3'><b>{}</b></span>",
+            "today": "<span color='#56616a'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -81,7 +81,7 @@
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#716366'>󰌌 </span> {}",
+      "format": "<span color='#2f4e69'>󰌌 </span> {}",
       "format-en": "Engelsk",
       "format-no": "Norsk",
       "tooltip": true
@@ -93,9 +93,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#9f8b78'></span>",
-         "paused": "<span color='#cab9a9'></span>",
-         "stopped": "<span color='#6c6358'></span>"
+         "playing": "<span color='#3a6f99'></span>",
+         "paused": "<span color='#698db3'></span>",
+         "stopped": "<span color='#56616a'></span>"
       }
    },
    "tray": {
