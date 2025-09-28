@@ -70,7 +70,7 @@ Do your own research before installing AUR packages.
 * ```~/.config/heroic/heroic-themes-main/pywal/pywal.css``` symlinked to ```~/.cache/wal/heroic-pywal.css```
 *  ```~/.local/share/TauonMusicBox/theme/colors-tauon.ttheme``` symlinked to ```~/.cache/wal/colors-tauon.ttheme```
 * ```~/scripts/setup_symlinks``` for rofi theme symlinks.
-
+* the waybar icons are recolored in the config json by a python script, to avoid also coloring the module text
 
 | Reloads colors instantly        | Needs restart
 | :---------          | :-------  
