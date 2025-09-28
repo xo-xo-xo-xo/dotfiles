@@ -60,10 +60,6 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 
 
-## Credit
-
-Some scripts modified from [@Narsell](https://github.com/Narsell/dotfiles)'s and [@LierB](https://github.com/LierB/dotfiles)'s dotfiles
-
 
 ## Random notes
 
@@ -89,3 +85,7 @@ Some scripts modified from [@Narsell](https://github.com/Narsell/dotfiles)'s and
   * Probably migrate to matugen, pywal is jank.
   * Consolidate/clean up scripts.
   * Better Swaync
+
+## Credit
+
+Some scripts modified from [@Narsell](https://github.com/Narsell/dotfiles)'s and [@LierB](https://github.com/LierB/dotfiles)'s dotfiles
