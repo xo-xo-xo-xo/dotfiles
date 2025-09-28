@@ -13,6 +13,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 <img width="2559" height="1441" alt="2025-09-28-050605_hyprshot" src="https://github.com/user-attachments/assets/785853c1-2223-4dab-afee-bfee1ded497f" />
 <img width="2559" height="1441" alt="2025-09-28-050803_hyprshot" src="https://github.com/user-attachments/assets/23d3ffdd-fb0c-49b2-addc-8372dbd35061" />
 <img width="2560" height="1441" alt="2025-09-28-051207_hyprshot" src="https://github.com/user-attachments/assets/049b3a1e-354f-4228-8009-c7eae28719b6" />
+<img width="2557" height="1441" alt="image" src="https://github.com/user-attachments/assets/5440ad4e-f088-4a10-bca0-bd35c4799eb7" />
 
 
 
