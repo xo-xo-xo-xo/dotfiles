@@ -1,1 +1,1 @@
-pkill kded6; killall waybar; waybar; waybar -c ~/.config/waybar/config-monitor2.jsonc -s ~/.config/waybar/style-monitor2.css
+pkill kded6; swaync-client -R ; killall waybar; waybar; waybar -c ~/.config/waybar/config-monitor2.jsonc -s ~/.config/waybar/style-monitor2.css
