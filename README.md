@@ -12,6 +12,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 <img width="2558" height="1441" alt="2025-09-26-233725_hyprshot" src="https://github.com/user-attachments/assets/ae2b1a80-e770-49ce-b21b-10390ce277ab" />
 <img width="2560" height="1441" alt="2025-09-26-234217_hyprshot" src="https://github.com/user-attachments/assets/2a840ac2-b2f9-4a78-a910-ba9a98e4138c" />
 <img width="2556" height="1440" alt="2025-09-26-234258_hyprshot" src="https://github.com/user-attachments/assets/ade3c02c-db93-447e-b281-50f160e2a11c" />
+<img width="2559" height="1441" alt="2025-09-27-234647_hyprshot" src="https://github.com/user-attachments/assets/acae7a8c-9b07-4be5-b884-4fce627e5d9a" />
 
 
 
