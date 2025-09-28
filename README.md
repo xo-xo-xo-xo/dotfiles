@@ -27,6 +27,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 | Window manager      | [hyprland](https://github.com/hyprwm/Hyprland)
 | Idle daemon         | [hypridle](https://github.com/hyprwm/hypridle)
 | Lockscreen | [hyprlock](https://github.com/hyprwm/hyprlock)
+| Logout menu | [wlogout](https://github.com/ArtsyMacaw/wlogout)
 | Screenshot utility | [hyprshot](https://github.com/Gustash/Hyprshot)
 | Wallpaper tool | [waypaper](https://github.com/anufrievroman/waypaper)
 | Bar | [waybar](https://github.com/Alexays/Waybar)
@@ -59,7 +60,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 ## Installing the requirements (Arch-based)
 
-``` $ yay -S hyprland hypridle hyprlock hyprshot waybar swaync rofi wofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
+``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
 
 Do your own research before installing AUR packages.
 
@@ -91,6 +92,7 @@ Do your own research before installing AUR packages.
 
 - [x] Custom SwayNC
 - [ ] ~Installation script?~ nope
+- [ ] Make a better color backend for more variety in themes
 
 ## Credit
 
