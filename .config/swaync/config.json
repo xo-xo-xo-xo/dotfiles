@@ -2,8 +2,6 @@
     "$schema": "/etc/xdg/swaync/configSchema.json",
     "positionX": "right",
     "positionY": "top",
-  
- 
     "control-center-width": 725,
     "control-center-height": 725,
     "control-center-margin-top": 8,
@@ -14,7 +12,7 @@
     "notification-inline-replies": true,
     "notification-window-width": 350,
     "notification-icon-size": 60,
-    "notification-body-image-height":  180,
+    "notification-body-image-height": 180,
     "notification-body-image-width": 180,
     "timeout": 5,
     "timeout-low": 2,
@@ -39,18 +37,25 @@
             "button-text": "󰆴"
         },
         "label": {
-            "max-lines":1,
+            "max-lines": 1,
             "text": "Notifications"
         },
-
         "mpris": {
             "image-size": 80,
             "image-radius": 0
         },
         "volume": {
             "label": " "
-       	    	
         }
-    }   
+    },
+ 
+ "scripts": {
+  "play-sound-any": {
+    "exec": "pw-play --volume 4 ~/.config/swaync/sounds/notification.oga",
+    "app-name": ".*"
+  }
 }
 
+
+
+}
