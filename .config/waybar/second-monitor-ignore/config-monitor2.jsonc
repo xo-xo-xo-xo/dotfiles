@@ -1,0 +1,106 @@
+{
+   "layer": "top",
+   "position": "top",
+   "output": "DP-3",
+
+   "reload_style_on_change": true,
+
+   "modules-center": [
+      "clock"
+   ],
+   "modules-right": [
+
+   ],
+
+   "group/audio": {
+      "orientation": "inherit",
+      "modules": [
+         "pulseaudio#output"
+      ]
+   },
+   "pulseaudio#output": {
+      "scroll-step": 1,
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "󰂰",
+      "format-bluetooth-muted": "{format_muted}",
+      "format-muted": "",
+      "format-icons": {
+         "headphone": " ",
+         "headset": " ",
+         "default": [
+            "<span color='#716366'> </span>",
+            "<span color='#9f8b78'> </span>",
+            "<span color='#cab9a9'> </span>",
+            "<span color='#6c6358'>  </span>"
+         ]
+      },
+      "tooltip-format": "{desc}",
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click-right": "pavucontrol"
+   },
+   "clock": {
+      "format": "<span color='#716366' rise='1500'> </span>{:L%A %m/%d <span color='#9f8b78' rise='1200'>  </span>%I:%M %p}",
+      "format-alt": "<span color='#cab9a9'>{:%Y-%m-%d}</span>",
+      "interval": 1,
+      "tooltip-format": "<tt>{calendar}</tt>",
+      "smooth-scrolling-threshold": 0.01,
+      "calendar": {
+         "mode": "year",
+         "mode-mon-col": 3,
+         "weeks-pos": "right",
+         "on-scroll": 1,
+         "format": {
+            "months": "<span color='#6c6358'><b>{}</b></span>",
+            "days": "<span color='#716366'><b>{}</b></span>",
+            "weeks": "<span color='#9f8b78'><b>W{}</b></span>",
+            "weekdays": "<span color='#cab9a9'><b>{}</b></span>",
+            "today": "<span color='#6c6358'><b><u>{}</u></b></span>"
+         }
+      },
+      "actions": {
+         "on-click-right": "mode",
+         "on-scroll-up": "shift_up",
+         "on-scroll-down": "shift_down"
+      }
+   },
+   "hyprland/workspaces": {
+      "all-outputs": false,
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+         "1": "<span font_size='12pt'></span>",
+         "2": "<span font_size='14pt'></span>",
+         "3": "<span font_size='12pt'>󱎓</span>",
+         "4": "<span font_size='12pt'></span>"
+      }
+   },
+   "custom/control-center": {
+      "tooltip": false,
+      "format": " ",
+      "on-click": "swaync-client -t -sw",
+      "escape": true
+   },
+   "hyprland/language": {
+      "format": "<span color='#716366'>󰌌 </span> {}",
+      "format-en": "Engelsk",
+      "format-no": "Norsk",
+      "tooltip": true
+   },
+   "mpris": {
+      "player": "tauon",
+      "format": "{status_icon}  {artist} - {title}",
+      "format-stopped": "{status_icon}",
+      "artist-len": 300,
+      "title-len": 300,
+      "status-icons": {
+         "playing": "<span color='#9f8b78'></span>",
+         "paused": "<span color='#cab9a9'></span>",
+         "stopped": "<span color='#6c6358'></span>"
+      }
+   },
+   "tray": {
+      "icon-size": 16,
+      "spacing": 10
+   }
+}
+
