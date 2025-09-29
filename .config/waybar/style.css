@@ -40,7 +40,7 @@ window#waybar {
 #cpu,
 #memory,
 #tray{
-background-color: alpha(@background, 0.7);
+background-color: alpha(@background, .81);
 border-radius: 5px;
 border: 2px solid alpha(#0f0f0e, 0.5);
 
@@ -63,7 +63,7 @@ margin: 0 4px;
 
 
 #pulseaudio-slider {
-background-color: alpha(@background, 0.7);
+background-color: alpha(@background, 0.81);
 border-radius: 5px;
 border: 3px solid alpha(#0f0f0e, 0.5);
 
@@ -130,7 +130,7 @@ font-size: 16px;
 #cpu:hover,
 #pulseaudio-slider:hover,
 #workspaces button:hover {
-background-color: alpha(@background, 0.77); 
+background-color: alpha(@background, 0.81); 
 color: @color2;
 border: 3px solid alpha(#0f0f0e, 0.5);
 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
@@ -149,7 +149,7 @@ box-shadow: none;
 border: none;
 }
 #tray menu {
-background-color: alpha(@background, 0.7);
+background-color: alpha(@background, 0.81);
 border: solid 1px alpha(@color1, 0.8);
 }
 #tray menu separator {
