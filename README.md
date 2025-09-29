@@ -1,8 +1,8 @@
 # Personal use dotfiles 
 
-
-These are the dotfiles I use on my own machine. They rely heavily on waypaper post commands and scripts to dynamically integrate pywal into every program I use.
-
+- Dynamically theming every program I use through Pywal (this is currently done through very jank post-waypaper script calls).
+- No installation script currently, expect tinkering.
+ 
 Feel free to write an issue if you're having trouble using these (please don't, they're a mess).
 
 
@@ -50,9 +50,8 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 | Qt theming |  [qt6ct](https://github.com/trialuser02/qt6ct)
 | Qt theming  | [kvantum](https://github.com/tsujan/Kvantum)
 | Qt icons | [breeze-chameleon](https://github.com/L4ki/Breeze-Chameleon-Icons)
-| GTK theming |  [nwg-look](https://github.com/nwg-piotr/nwg-look)
 | Theme generation | [pywal16](https://github.com/eylles/pywal16)
-| Discord theme generation | [pywal-discord](https://github.com/NecRaul/pywal-discord)
+| Discord theme generation | [pywal-discord](https://github.com/SnarkyDeveloper/pywal-discord)
 | Firefox theme generation | [pywalfox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/)
 
 
@@ -60,42 +59,39 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 ## Installing the requirements (Arch-based)
 
-``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox pywal-discord-git qview```
+``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox qview```
 
-Do your own research before installing AUR packages.
+Review the AUR packages yourself.
 
 
 ## Random notes
 
 * Waybar's system tray module breaks occasionally. As far as I'm aware, the workaround is attacking ```pkill kded6``` to your waybar reload scripts.
-* ```~/.themes/pywal/gtk-3.0/colors.css``` symlinked to ```~/.cache/wal/colors-waybar.css```
-* ```~/.config/heroic/heroic-themes-main/pywal/pywal.css``` symlinked to ```~/.cache/wal/heroic-pywal.css```
-*  ```~/.local/share/TauonMusicBox/theme/colors-tauon.ttheme``` symlinked to ```~/.cache/wal/colors-tauon.ttheme```
-* ```~/scripts/setup_symlinks``` for rofi theme symlinks.
-* the waybar icons are recolored in the config json by a python script, to avoid also coloring the module text
+* The Waybar icons are recolored in the config json by a python script, as to avoid also coloring the module text.
+* No longer using nwg-look, it kills symlinks. ```gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"``` is called by Waypaper now.
+
+
 
 | Reloads colors instantly        | Needs restart
 | :---------          | :-------  
-| kitty/cli apps             | mpv (history script added for restarts) 
-| waybar     |  qt/gtk
-| swaync    | waypaper
-| firefox | heroic launcher
-| discord         | obsidian
-| vs code | filepickers? not sure how to reload..
+| Kitty/CLI apps             | mpv (history script added for restarts) 
+| Waybar     |  Qt/GTK
+| SwayNC    | Waypaper
+| Firefox | Heroic launcher
+| Discord         | Obsidian
+| VS Code | Filepickers? not sure how to reload..
 |         | 4chanx/oneechan, need to re-import every generated theme
 
   ## Todo
 
-- [ ] Consider switching to matugen, pywal is jank.
-
-- [ ] Clean up scripts (especially symlinks). 
-
+- [x] GTK4
 - [x] Custom SwayNC
 - [ ] ~Installation script?~ nope
-- [ ] Make a better color backend for more variety in themes
-- [ ] qBittorrent theme 
+- [ ] Make a better color backend 
+- [ ] qBittorrent
 - [ ] More website userstyles?
-- [ ] GTK4 apps, horrible toolkit. 
+- [ ] Clean up scripts ~(especially symlinks)~. 
+- [ ] Consider switching to matugen, pywal is jank
 
 ## Credit
 
