@@ -1,7 +1,7 @@
 #!/bin/bash
 # wal symlinks
 
-# directories to create
+# directories
 for dir in \
   "$HOME/.config/rofi" \
   "$HOME/.local/share/TauonMusicBox/theme" \
@@ -11,7 +11,7 @@ for dir in \
     mkdir -p "$dir"
 done
 
-# Symlinks (source -> target)
+
 ln -sf ~/.cache/wal/rofi-colors.rasi       ~/.config/rofi/colors.rasi
 ln -sf ~/.cache/wal/rofi-simple-config.rasi ~/.config/rofi/simple-config.rasi
 ln -sf ~/.cache/wal/rofi-powermenu-config.rasi ~/.config/rofi/powermenu-config.rasi
