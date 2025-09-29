@@ -79,7 +79,8 @@ text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
  min-height: 0px;
  border: 0px;
     box-shadow: none;
-    background-color: alpha (@foreground, 0.1);
+    background-color: alpha (@foreground, 0);
+
 }
 #pulseaudio-slider trough {
     min-height: 5px;

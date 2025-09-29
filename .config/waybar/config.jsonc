@@ -34,7 +34,7 @@
 },
 
   "custom/power": {
-      "format": "<span color='#2f4e69'>󰐥</span>",
+      "format": "<span color='#716366'>󰐥</span>",
       "tooltip": false,
       "on-click": "~/scripts/rofi-powermenu.sh",  
       "escape": true
@@ -42,17 +42,17 @@
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#3a6f99' rise='1050'></span> {}% ",
+    "format": "<span color='#9f8b78' rise='1050'></span> {}% ",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#698db3' rise='1100' size='medium'> </span>{}%",
+    "format": "<span color='#cab9a9' rise='1100' size='medium'> </span>{}%",
     "max-length": 10
 },
    "clock": {
-      "format": "<span color='#56616a' rise='1380'></span> {:L%A %m/%d  <span color='#2f4e69' rise='930'></span> %I:%M %p}",
-      "format-alt": "<span color='#3a6f99'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#6c6358' rise='1380'></span> {:L%A %m/%d  <span color='#716366' rise='930'></span> %I:%M %p}",
+      "format-alt": "<span color='#9f8b78'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -62,11 +62,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#698db3'><b>{}</b></span>",
-            "days": "<span color='#56616a'><b>{}</b></span>",
-            "weeks": "<span color='#2f4e69'><b>W{}</b></span>",
-            "weekdays": "<span color='#3a6f99'><b>{}</b></span>",
-            "today": "<span color='#698db3'><b><u>{}</u></b></span>"
+            "months": "<span color='#cab9a9'><b>{}</b></span>",
+            "days": "<span color='#6c6358'><b>{}</b></span>",
+            "weeks": "<span color='#716366'><b>W{}</b></span>",
+            "weekdays": "<span color='#9f8b78'><b>{}</b></span>",
+            "today": "<span color='#cab9a9'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -88,12 +88,12 @@
    },
    "custom/control-center": {
       "tooltip": false,
-      "format": "<span color='#56616a' size='larger'>󰂚</span> ",
+      "format": "<span color='#6c6358' size='larger'>󰂚</span> ",
       "on-click": "swaync-client -t -sw",
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#2f4e69' rise='1200'>󰌌</span> {}",
+      "format": "<span color='#716366' rise='1200'>󰌌</span> {}",
       "format-en": "EN",
       "format-no": "NO",
       "tooltip": true
@@ -105,9 +105,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#3a6f99' rise='1500'></span>",
-         "paused": "<span color='#698db3'></span>",
-         "stopped": "<span color='#56616a'></span>"
+         "playing": "<span color='#9f8b78' rise='1500'></span>",
+         "paused": "<span color='#cab9a9'></span>",
+         "stopped": "<span color='#6c6358'></span>"
       }
    },
    "tray": {
