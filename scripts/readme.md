@@ -15,13 +15,10 @@ rofi clipboard history with image support, called via hyprland binds
 
 replaces the span colored icons in waybar config with pywal colors 
 
-## rofi-powermenu.sh
-
-logout menu, called via hyprland binds
 
 ## setup_symlinks.sh
 
-rofi wal templates
+symlinks pywal templates
 
 ## songdetails.sh 
 
