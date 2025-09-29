@@ -7,13 +7,14 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 
 ### Screenshots
+<img width="2560" height="1441" alt="2025-09-29-005747_hyprshot" src="https://github.com/user-attachments/assets/1870fb13-1030-4ba6-a647-af62a1db6b80" />
+<img width="2559" height="1441" alt="2025-09-29-005055_hyprshot" src="https://github.com/user-attachments/assets/261dc9da-b633-4c65-8823-2bd6949e89a8" />
+<img width="2562" height="1441" alt="2025-09-29-010124_hyprshot" src="https://github.com/user-attachments/assets/261cc2f3-d0fd-404f-86f2-a8e93e086d02" />
+<img width="2559" height="1441" alt="2025-09-29-010532_hyprshot" src="https://github.com/user-attachments/assets/81f0438f-d5a9-468f-8447-2ce34b14da4c" />
+<img width="2554" height="1437" alt="2025-09-29-010902_hyprshot" src="https://github.com/user-attachments/assets/7a2d59ff-ee48-43b7-8083-cc056dd33007" />
+<img width="2556" height="1439" alt="2025-09-29-010158_hyprshot" src="https://github.com/user-attachments/assets/9469d23b-a969-4547-befa-cbb1ea0fe807" />
 
-<img width="2559" height="1441" alt="2025-09-28-050312_hyprshot" src="https://github.com/user-attachments/assets/9f06a24a-8ac0-4d1d-86a1-c9052e00961e" />
-<img width="2560" height="1441" alt="2025-09-28-050003_hyprshot" src="https://github.com/user-attachments/assets/7773e4bc-5a2b-4992-9b99-e0871a7e51f3" />
-<img width="2559" height="1441" alt="2025-09-28-050605_hyprshot" src="https://github.com/user-attachments/assets/785853c1-2223-4dab-afee-bfee1ded497f" />
-<img width="2559" height="1441" alt="2025-09-28-050803_hyprshot" src="https://github.com/user-attachments/assets/23d3ffdd-fb0c-49b2-addc-8372dbd35061" />
-<img width="2560" height="1441" alt="2025-09-28-051207_hyprshot" src="https://github.com/user-attachments/assets/049b3a1e-354f-4228-8009-c7eae28719b6" />
-<img width="2557" height="1441" alt="image" src="https://github.com/user-attachments/assets/5440ad4e-f088-4a10-bca0-bd35c4799eb7" />
+
 
 
 
@@ -50,6 +51,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 | Qt theming |  [qt6ct](https://github.com/trialuser02/qt6ct)
 | Qt theming  | [kvantum](https://github.com/tsujan/Kvantum)
 | Qt icons | [breeze-chameleon](https://github.com/L4ki/Breeze-Chameleon-Icons)
+| GTK theming | [nwg-look](github.com/nwg-piotr/nwg-look)
 | Theme generation | [pywal16](https://github.com/eylles/pywal16)
 | Discord theme generation | [pywal-discord](https://github.com/SnarkyDeveloper/pywal-discord)
 | Firefox theme generation | [pywalfox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/)
@@ -68,7 +70,7 @@ Review the AUR packages yourself.
 
 * Waybar's system tray module breaks occasionally. As far as I'm aware, the workaround is attacking ```pkill kded6``` to your waybar reload scripts.
 * The Waybar icons are recolored in the config json by a python script, as to avoid also coloring the module text.
-* No longer using nwg-look, it kills symlinks. ```gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"``` is called by Waypaper now.
+* The preferred way of changing the GTK theme is calling ```gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"```, but nwg-look config added as well
 
 
 
