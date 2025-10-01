@@ -39,6 +39,9 @@ window#waybar {
 #custom-power,
 #cpu,
 #memory,
+#window,
+#custom-weather,
+#custom-weather2,
 #tray{
 background-color: alpha(@background, .81);
 border-radius: 5px;
