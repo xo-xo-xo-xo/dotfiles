@@ -37,11 +37,10 @@ window#waybar {
 #language,
 #custom-control-center,
 #custom-power,
-#cpu,
-#memory,
 #window,
 #custom-weather,
 #custom-weather2,
+#system,
 #tray{
 background-color: alpha(@background, .81);
 border-radius: 5px;

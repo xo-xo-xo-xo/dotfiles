@@ -14,10 +14,9 @@
      
    ],
    "modules-right": [
-      "custom/weather2",
+      
       "custom/weather",
-      "cpu",
-      "memory",
+      "group/system",
       "pulseaudio/slider",
       "hyprland/language",
       "tray",
@@ -25,12 +24,7 @@
       "custom/control-center"
    ],
 
-   "group/audio": {
-      "orientation": "inherit",
-      "modules": [
-         "pulseaudio#output"
-      ]
-   },
+ 
 "pulseaudio/slider": {
     "min": 0,
     "max": 100,
@@ -46,7 +40,7 @@
         "(.*) - kitten": " $1",
         "(.*) - mpv": " $1"
     },
-    "separate-outputs": true
+    "separate-outputs": false
 },
 
 
@@ -59,9 +53,6 @@
     "interval": 2400
 },
 
-
-
-
 "custom/weather2": {
     "exec": "${HOME}/scripts/get-weather.sh Kristiansand+Norway",
     "return-type": "json",
@@ -70,26 +61,29 @@
     "interval": 2400
 },
 
-  "custom/power": {
-      "format": "<span color='#324268'>󰐥</span>",
-      "tooltip": false,
-      "on-click": "~/scripts/rofi-powermenu.sh",  
-      "escape": true
-   },
+"group/system": {
+    "orientation": "horizontal",
+    "modules": [
+        "cpu",
+        "memory"
+    ],
+    "spacing": 4   // small gap between CPU and RAM
+},
+
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#6c364a' rise='1050'></span> {}% ",
+    "format": "<span color='#474f6f' rise='1050'></span> {}%",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#446a85' rise='1100' size='medium'> </span>{}%",
+    "format": "<span color='#6c6874' rise='1100' size='medium'> </span>{}%  ",
     "max-length": 10
 },
    "clock": {
-      "format": "<span color='#7d8995' rise='1380'></span> {:L%A %m/%d  <span color='#89a3ae' rise='930'></span> %I:%M %p}",
-      "format-alt": "<span color='#9eb8bc'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#6c7891' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
+      "format-alt": "<span color='#a28d81'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -99,11 +93,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#324268'><b>{}</b></span>",
-            "days": "<span color='#6c364a'><b>{}</b></span>",
-            "weeks": "<span color='#446a85'><b>W{}</b></span>",
-            "weekdays": "<span color='#7d8995'><b>{}</b></span>",
-            "today": "<span color='#89a3ae'><b><u>{}</u></b></span>"
+            "months": "<span color='#383f60'><b>{}</b></span>",
+            "days": "<span color='#474f6f'><b>{}</b></span>",
+            "weeks": "<span color='#6c6874'><b>W{}</b></span>",
+            "weekdays": "<span color='#6c7891'><b>{}</b></span>",
+            "today": "<span color='#878e9d'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -125,12 +119,12 @@
    },
    "custom/control-center": {
       "tooltip": false,
-      "format": "<span color='#9eb8bc' size='larger'>󰂚</span> ",
+      "format": "<span color='#a28d81' size='larger'>󰂚</span> ",
       "on-click": "swaync-client -t -sw",
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#324268' rise='1200'>󰌌</span> {}",
+      "format": "<span color='#383f60' rise='1200'>󰌌</span> {}",
       "format-en": "EN",
       "format-no": "NO",
       "tooltip": true
@@ -142,9 +136,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#6c364a' rise='1500'></span>",
-         "paused": "<span color='#446a85'></span>",
-         "stopped": "<span color='#7d8995'></span>"
+         "playing": "<span color='#474f6f' rise='1500'></span>",
+         "paused": "<span color='#6c6874'></span>",
+         "stopped": "<span color='#6c7891'></span>"
       }
    },
    "tray": {
