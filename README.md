@@ -61,7 +61,7 @@ Feel free to write an issue if you're having trouble using these (~please don't,
 
 ## Installing the requirements (Arch-based)
 
-``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv tauon-music-box-git fish dolphin cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox qview```
+``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv tauon-music-box-git fish dolphin cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox qview waybar-module-pacman-updates-git```
 
 Review the AUR packages yourself.
 
