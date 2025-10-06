@@ -2,14 +2,14 @@
 
 # the mega pywal script
 
-# aybar icons
+# waybar icons
 
 python3 /home/xo/scripts/colors-waybar.py
 
 # discord
 ~/.local/bin/pywal-discord || true
 
-#kvantum
+# kvantum
 
 KVANTUM_DIR="$HOME/.config/Kvantum"
 WAL_CACHE_DIR="$HOME/.cache/wal"
@@ -44,14 +44,14 @@ if [ -f "$TEMPLATE_FILE" ] && [ -f "$COLORS_FILE" ]; then
     > "$OUTPUT_FILE"
 fi
 
-#tauon
+# tauon
 
 curl -s http://localhost:7813/reloadtheme >/dev/null || true
 
-#save
+# save
 cp "$WALLPAPER" "$HOME/.local/share/wallpaper.jpg"
 
-#gui
+# gui
 
 pkill kded6 || true
 killall swaync waybar || true
