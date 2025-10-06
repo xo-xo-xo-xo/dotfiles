@@ -10,7 +10,8 @@
       "hyprland/window"
    ],
    "modules-center": [
-      "mpris"
+      "mpris",
+      "custom/playerctl"
      
    ],
    "modules-right": [
@@ -59,6 +60,15 @@
     "format": "{}",
     "tooltip": true,
     "interval": 2400
+},
+
+"custom/playerctl": {
+  "format": "<span color='#514e4f' rise='1150'></span> {}",
+  "exec": "~/scripts/playerctl.sh",
+  "interval": 2,
+  "return-type": "json",
+  "max-length": 60,
+  "on-click": "~/scripts/playerctl-popup.sh"
 },
 
 "group/system": {
