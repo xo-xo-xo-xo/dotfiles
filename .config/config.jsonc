@@ -1,0 +1,149 @@
+{
+   "layer": "top",
+   "position": "top",
+   "output": "DP-5",
+
+   "reload_style_on_change": true,
+   "modules-left": [
+ ///     "custom/power",
+      "hyprland/workspaces",
+      "hyprland/window"
+   ],
+   "modules-center": [
+      "mpris"
+     
+   ],
+   "modules-right": [
+      
+      
+      "group/system",
+      "pulseaudio/slider",
+      "hyprland/language",
+      "tray",
+      "clock",
+      "custom/control-center"
+   ],
+
+ 
+"pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+},
+
+"hyprland/window": {
+    "format": "{}",
+    "rewrite": {
+        "(.*) — Mozilla Firefox": " $1",
+        "(.*) - Code - OSS": " $1",
+        "(.*) - kitty": " $1",
+        "(.*) - kitten": " $1",
+        "(.*) - mpv": " $1"
+    },
+    "separate-outputs": false
+},
+
+
+
+"custom/weather": {
+    "exec": "${HOME}/scripts/get-weather.sh Portland+Oregon",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 2400
+},
+
+"custom/weather2": {
+    "exec": "${HOME}/scripts/get-weather.sh Kristiansand+Norway",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 2400
+},
+
+"group/system": {
+    "orientation": "horizontal",
+    "modules": [
+        "cpu",
+        "memory"
+    ],
+    "spacing": 4   // small gap between CPU and RAM
+},
+
+
+"memory": {
+    "interval": 30,
+    "format": "<span color='#5a4948' rise='1050'></span> {}%",
+    "max-length": 10
+},
+"cpu": {
+    "interval": 10,
+    "format": "<span color='#514e4f' rise='1100' size='medium'> </span>{}%  ",
+    "max-length": 10
+},
+   "clock": {
+      "format": "<span color='#53504f' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
+      "format-alt": "<span color='#756b69'>{:%Y-%m-%d}</span>",
+      "interval": 1,
+      "tooltip-format": "<tt>{calendar}</tt>",
+      "smooth-scrolling-threshold": 0.01,
+      "calendar": {
+         "mode": "year",
+         "mode-mon-col": 3,
+         "weeks-pos": "right",
+         "on-scroll": 1,
+         "format": {
+            "months": "<span color='#a08f88'><b>{}</b></span>",
+            "days": "<span color='#a5968e'><b>{}</b></span>",
+            "weeks": "<span color='#5a4948'><b>W{}</b></span>",
+            "weekdays": "<span color='#514e4f'><b>{}</b></span>",
+            "today": "<span color='#53504f'><b><u>{}</u></b></span>"
+         }
+      },
+      "actions": {
+         "on-click-right": "mode",
+         "on-scroll-up": "shift_up",
+         "on-scroll-down": "shift_down"
+      }
+   },
+   "hyprland/workspaces": {
+      "all-outputs": false,
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+         "1": "",
+         "2": "",
+         "3": "",
+         "4": ""
+      }
+   },
+   "custom/control-center": {
+      "tooltip": false,
+      "format": "<span color='#756b69' size='larger'>󰂚</span> ",
+      "on-click": "swaync-client -t -sw",
+      "escape": true
+   },
+   "hyprland/language": {
+      "format": "<span color='#a08f88' rise='1200'>󰌌</span> {}",
+      "format-en": "EN",
+      "format-no": "NO",
+      "tooltip": true
+   },
+   "mpris": {
+      "player": "mpd",
+      "format": "{status_icon} {artist} - {title}",
+      "format-stopped": "{status_icon}",
+      "artist-len": 300,
+      "title-len": 300,
+      "status-icons": {
+         "playing": "<span color='#a5968e' rise='1500'></span>",
+         "paused": "<span color='#5a4948'></span>",
+         "stopped": "<span color='#514e4f'></span>"
+      }
+   },
+   "tray": {
+      "icon-size": 16,
+      "spacing": 10
+   }
+}
+
