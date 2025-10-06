@@ -1,9 +1,9 @@
 # Personal use dotfiles 
 
-- Dynamically theming every program I use through Pywal (this is currently done through very jank post-waypaper script calls).
+- Dynamically theming every program I use through Pywal16 & waypaper post commands.
 - No installation script currently, expect tinkering.
  
-Feel free to write an issue if you're having trouble using these (please don't, they're a mess).
+Feel free to write an issue if you're having trouble using these (~please don't, they're a mess~).
 
 
 ### Screenshots
@@ -61,7 +61,7 @@ Feel free to write an issue if you're having trouble using these (please don't, 
 
 ## Installing the requirements (Arch-based)
 
-``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv rmpc fish dolphin mpd cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox qview```
+``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv tauon-music-box-git fish dolphin cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox qview```
 
 Review the AUR packages yourself.
 
@@ -71,7 +71,7 @@ Review the AUR packages yourself.
 * Waybar's system tray module breaks occasionally. As far as I'm aware, the workaround is attacking ```pkill kded6``` to your waybar reload scripts.
 * The Waybar icons are recolored in the config json by a python script, as to avoid also coloring the module text.
 * The preferred way of changing the GTK theme is calling ```gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"```, but nwg-look config added as well
-
+* Nearly all of this is handled by waypaper's post command calling ```unified-theme.sh```, so waypaper is currently mandatory.
 
 
 | Reloads colors instantly        | Needs restart
@@ -82,7 +82,7 @@ Review the AUR packages yourself.
 | Firefox | Heroic launcher
 | Discord         | Obsidian
 | VS Code | Filepickers? not sure how to reload..
-|         | 4chanx/oneechan, need to re-import every generated theme
+| Tauon        | 4chanx/oneechan, need to re-import every generated theme
 
   ## Todo
 
@@ -91,8 +91,9 @@ Review the AUR packages yourself.
 - [ ] ~Installation script?~ nope
 - [ ] Make a better color backend 
 - [ ] qBittorrent
+- [ ] OBS
 - [ ] More website userstyles?
-- [ ] Clean up scripts ~(especially symlinks)~. 
+- [x] Clean up scripts ~(especially symlinks)~. 
 - [ ] Consider switching to matugen, pywal is jank
 
 ## Credit
