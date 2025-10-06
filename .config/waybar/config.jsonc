@@ -63,7 +63,7 @@
 },
 
 "custom/playerctl": {
-  "format": "<span color='#5a4948' rise='1150'></span> {}",
+  "format": "<span color='#3c5660' rise='1150'></span> {}",
   "exec": "~/scripts/playerctl.sh",
   "interval": 2,
   "return-type": "json",
@@ -72,28 +72,65 @@
 },
 
 "group/system": {
-    "orientation": "horizontal",
-    "modules": [
-        "cpu",
-        "memory"
-    ],
-    "spacing": 4   // small gap between CPU and RAM
-},
+	"orientation": "horizontal",
 
+	"drawer": {
+		"transition-duration": 500,
+		"transition-left-to-right": false
+	},
+	"modules": [
+		"custom/hw-drawer",
+      "custom/updates",
+      "custom/gpu-usage",
+		"cpu",
+		"memory",
+		"temperature"
+	]
+},
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#514e4f' rise='1050'></span> {}%",
+    "format": "<span color='#4a6b6f' rise='1050'></span> {}%",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#53504f' rise='1100' size='medium'> </span>{}%  ",
+    "format": "<span color='#75858c' rise='1100' size='medium'> </span>{usage}%  ",
     "max-length": 10
 },
+
+"custom/hw-drawer": {
+	"format": "<span color='#b6939e'>󰈐</span>",
+	"tooltip-format": "System monitors",
+   "orientation": "horizontal"
+},
+
+ "temperature": {
+    // "thermal-zone": 2,
+    "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": "  <span color='#99a5af' rise='1100'></span> {temperatureC}°C  "
+},
+
+"custom/gpu-usage": {
+  "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
+  "format": "<span color='#a4b0b7' rise='1000'>󰍹</span> {}%  ",
+  "return-type": "",
+  "interval": 1
+},
+
+"custom/updates": {
+    "format": "<span color='#3c5660' size='medium' rise='1300'>󰮯</span> {}  ",
+    "return-type": "json",
+  
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --no-aur --network-interval-seconds 300"
+},
+
    "clock": {
-      "format": "<span color='#756b69' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
-      "format-alt": "<span color='#a08f88'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#4a6b6f' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
+      "format-alt": "<span color='#75858c'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -103,11 +140,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#a5968e'><b>{}</b></span>",
-            "days": "<span color='#5a4948'><b>{}</b></span>",
-            "weeks": "<span color='#514e4f'><b>W{}</b></span>",
-            "weekdays": "<span color='#53504f'><b>{}</b></span>",
-            "today": "<span color='#756b69'><b><u>{}</u></b></span>"
+            "months": "<span color='#b6939e'><b>{}</b></span>",
+            "days": "<span color='#99a5af'><b>{}</b></span>",
+            "weeks": "<span color='#a4b0b7'><b>W{}</b></span>",
+            "weekdays": "<span color='#3c5660'><b>{}</b></span>",
+            "today": "<span color='#4a6b6f'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -129,12 +166,12 @@
    },
    "custom/control-center": {
       "tooltip": false,
-      "format": "<span color='#a08f88' size='larger'>󰂚</span> ",
+      "format": "<span color='#75858c' size='larger'>󰂚</span> ",
       "on-click": "swaync-client -t -sw",
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#a5968e' rise='1200'>󰌌</span> {}",
+      "format": "<span color='#b6939e' rise='1200'>󰌌</span> {}",
       "format-en": "EN",
       "format-no": "NO",
       "tooltip": true
@@ -146,9 +183,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#5a4948' rise='1500'></span>",
-         "paused": "<span color='#514e4f'></span>",
-         "stopped": "<span color='#53504f'></span>"
+         "playing": "<span color='#99a5af' rise='1500'></span>",
+         "paused": "<span color='#a4b0b7'></span>",
+         "stopped": "<span color='#3c5660'></span>"
       }
    },
    "tray": {

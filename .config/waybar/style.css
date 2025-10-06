@@ -38,6 +38,7 @@ window#waybar {
 #custom-control-center,
 #custom-power,
 #custom-playerctl,
+
 #window,
 #custom-weather,
 #custom-weather2,
@@ -131,6 +132,8 @@ font-size: 16px;
 #custom-control-center:hover,
 #memory:hover,
 #cpu:hover,
+#custom-gpu-usage:hover,
+#temperature:hover,
 #pulseaudio-slider:hover,
 #workspaces button:hover {
 background-color: alpha(@background, 0.81); 
@@ -167,3 +170,4 @@ background-color: @foreground;
 #tray menu menuitem:hover label {
 color: @background;
 }
+
