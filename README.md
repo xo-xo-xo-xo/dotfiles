@@ -92,7 +92,7 @@ Review the AUR packages yourself.
 - [ ] Make a better color backend 
 - [ ] qBittorrent
 - [ ] OBS
-- [ ] More website userstyles?
+- [ ] Darkreader pywal fork
 - [x] Clean up scripts ~(especially symlinks)~. 
 - [ ] Consider switching to matugen, pywal is jank
 
