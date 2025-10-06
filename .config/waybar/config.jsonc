@@ -10,12 +10,13 @@
       "hyprland/window"
    ],
    "modules-center": [
-      "mpris"
+      "mpris",
+      "custom/playerctl"
      
    ],
    "modules-right": [
       
-      "custom/weather",
+      
       "group/system",
       "pulseaudio/slider",
       "hyprland/language",
@@ -61,6 +62,15 @@
     "interval": 2400
 },
 
+"custom/playerctl": {
+  "format": "<span color='#5a4948' rise='1150'></span> {}",
+  "exec": "~/scripts/playerctl.sh",
+  "interval": 2,
+  "return-type": "json",
+  "max-length": 60,
+  "on-click": "~/scripts/playerctl-popup.sh"
+},
+
 "group/system": {
     "orientation": "horizontal",
     "modules": [
@@ -73,17 +83,17 @@
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#474f6f' rise='1050'></span> {}%",
+    "format": "<span color='#514e4f' rise='1050'></span> {}%",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#6c6874' rise='1100' size='medium'> </span>{}%  ",
+    "format": "<span color='#53504f' rise='1100' size='medium'> </span>{}%  ",
     "max-length": 10
 },
    "clock": {
-      "format": "<span color='#6c7891' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
-      "format-alt": "<span color='#a28d81'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#756b69' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
+      "format-alt": "<span color='#a08f88'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -93,11 +103,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#383f60'><b>{}</b></span>",
-            "days": "<span color='#474f6f'><b>{}</b></span>",
-            "weeks": "<span color='#6c6874'><b>W{}</b></span>",
-            "weekdays": "<span color='#6c7891'><b>{}</b></span>",
-            "today": "<span color='#878e9d'><b><u>{}</u></b></span>"
+            "months": "<span color='#a5968e'><b>{}</b></span>",
+            "days": "<span color='#5a4948'><b>{}</b></span>",
+            "weeks": "<span color='#514e4f'><b>W{}</b></span>",
+            "weekdays": "<span color='#53504f'><b>{}</b></span>",
+            "today": "<span color='#756b69'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -119,12 +129,12 @@
    },
    "custom/control-center": {
       "tooltip": false,
-      "format": "<span color='#a28d81' size='larger'>󰂚</span> ",
+      "format": "<span color='#a08f88' size='larger'>󰂚</span> ",
       "on-click": "swaync-client -t -sw",
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#383f60' rise='1200'>󰌌</span> {}",
+      "format": "<span color='#a5968e' rise='1200'>󰌌</span> {}",
       "format-en": "EN",
       "format-no": "NO",
       "tooltip": true
@@ -136,9 +146,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#474f6f' rise='1500'></span>",
-         "paused": "<span color='#6c6874'></span>",
-         "stopped": "<span color='#6c7891'></span>"
+         "playing": "<span color='#5a4948' rise='1500'></span>",
+         "paused": "<span color='#514e4f'></span>",
+         "stopped": "<span color='#53504f'></span>"
       }
    },
    "tray": {
