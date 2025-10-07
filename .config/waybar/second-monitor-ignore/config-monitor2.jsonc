@@ -68,7 +68,7 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "  <span color='#7d6b76' rise='1100'></span> {temperatureC}°C  "
+    "format": "  <span color='#7d6b76' rise='1100'></span> {temperatureC}°C"
 },
 
 "custom/gpu-usage": {
