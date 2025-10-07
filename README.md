@@ -91,7 +91,6 @@ Review the AUR packages yourself.
 - [x] Custom SwayNC
 - [ ] ~Installation script?~ nope
 - [ ] Make a better color backend 
-- [ ] qBittorrent
 - [ ] OBS
 - [x] ~Darkreader pywal fork~ Darkreader template
 - [x] Clean up scripts ~(especially symlinks)~. 
