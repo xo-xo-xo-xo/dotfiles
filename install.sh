@@ -186,9 +186,9 @@ done
 # ─── reminders ───
 
 echo -e "${RED} REMINDER:${RESET}"
-echo -e "you will need to edit ${BLUE}~/.config/hypr/general.conf${RESET} and ${BLUE}~/.config/waybar/config.json${RESET} to match your monitor IDs."
-echo -e "check the hyprland wiki for more info."
-# ─── Final message ───
+echo -e "there are some manual edits that must be made."
+
+# ─── final message ───
 echo -e "💖 done! $( [ $DRY_RUN -eq 1 ] && echo 'dry-run. use --apply to execute.' || echo "backups created at $BACKUP")"
 
 if [ $DRY_RUN -eq 0 ]; then
