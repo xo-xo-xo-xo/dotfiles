@@ -1,0 +1,25 @@
+.theme-dark {
+    --background-primary: #150911 !important;
+    --background-secondary: #150911 !important;
+    --titlebar-background-focused: #150911 !important;
+    --background-modifier-form-field: #150911 !important;
+    --background-modifier-border-focus: #504a5f33 !important;
+    --divider-color: #504a5f33 !important;
+    --background-modifier-cover: #150911 !important;
+    --prompt-border-color: #504a5f33 !important;
+    --layer-1: #504a5f33 !important;
+    --background-modifier-border: #504a5f77 !important;
+    --interactive-normal: var(--layer-1) !important;
+    --text-faint: #504a5f77 !important;
+    --background-modifier-border-hover: #504a5f33 !important;
+    --indentation-guide-color: #504a5f33 !important;
+    --indentation-guide-color-active: #504a5f77 !important;
+}
+
+.theme-dark .nav-folder-title-content::before {
+    color: #504a5f77 !important;
+}
+
+body {
+    --tab-stacked-pane-width: 100%;
+}

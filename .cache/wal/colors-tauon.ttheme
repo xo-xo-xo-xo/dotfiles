@@ -1,0 +1,82 @@
+#Tauon Music Box theme file
+
+
+#-Backgrounds-----
+
+21,9,17		player background (top panel)
+21,9,17	  	playlist panel
+21,9,17		side panel
+21,9,17		bottom panel
+21,9,17        queue panel
+#11, 13, 15
+
+#-Playlist-------
+
+196,193,195		track line
+196,193,195		track time
+196,193,195		track index
+122,59,66		track artist
+85,92,105		album line
+
+196,193,195		track playing
+117,78,98		index playing
+122,59,66		artist playing
+85,92,105		album playing
+117,78,98		time playing
+
+85,92,105		track missing
+
+184,130,131		fav line
+122,59,66		folder line
+85,92,105		folder title
+#8,250,134
+
+85,92,105,127		playing highlight
+85,92,105,64		select highlight
+196,193,195		    gallery highlight
+
+#-Menu-------------
+21,9,17        menu background
+85,92,105        menu highlight
+117,78,98     menu text
+122,59,66        menu disable text
+
+#-Bottom panel------
+
+122,59,66		buttons off
+117,78,98		buttons over
+196,193,195		buttons active
+
+196,193,195		playing time
+
+122,59,66		seek bar
+122,59,66		volume bar
+85,92,105,64		seek bg
+85,92,105,64	    volume bg
+122,59,66		scroll bar
+
+122,59,66		mode off
+117,78,98		mode over
+85,92,105		mode on
+
+117,78,98		bottom title
+
+#-Top panel---------
+
+117,78,98		tab active line
+117,78,98		tab line
+21,9,17		tab background
+80,74,95		tab over
+80,74,95		tab active background
+196,193,195		music vis
+
+#-Side panel--------
+
+117,78,98		title info
+196,193,195		extra info
+122,59,66		art border
+
+#-Mini Mode---------
+
+21,9,17        mini bg
+196,193,195        mini border

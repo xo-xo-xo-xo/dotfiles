@@ -1,0 +1,37 @@
+body.pywal{
+  --accent: #504a5f;
+  --accent-overlay: #504a5f;
+  --navbar-accent: #c4c1c3;
+  --background: #150911;
+  --body-background: #150911;
+  --background-darker: var(--body-background);
+  --current-background: var(--body-background);
+  --navbar-background: #150911;
+  --navbar-active-background: #150911;
+  --gradient-body-background: linear-gradient(
+    90deg,
+    var(--background-darker) -32px,
+    var(--body-background) 64px,
+    var(--body-background) 100%
+  );
+  --input-background: #150911;
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --success: #754e62;
+  --success-hover: #7a3b42;
+  --primary: #7d6b76;
+  --primary-hover: #150911;
+  --danger: #504a5f;
+  --danger-hover: #7a3b42;
+  --anticheat-denied: #504a5f;
+  --anticheat-broken: #504a5f;
+  --anticheat-running: #7d6b76;
+  --anticheat-supported: #b88283;
+  --anticheat-planned: #7d6b76;
+  --text-title: #c4c1c3;
+  --icons-background: #150911;
+  --action-icon: #c4c1c3;
+  --action-icon-hover: #555c69;
+  --action-icon-active: #555c69;
+  --icon-disabled: #6c5866;
+}
