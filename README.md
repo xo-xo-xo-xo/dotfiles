@@ -1,7 +1,7 @@
 # Personal use dotfiles 
 
 - Dynamically theming every program I use through Pywal16 & waypaper post commands.
-- No installation script currently, expect tinkering.
+- Basic installation script included but not recommended. Expect tinkering.
  
 Feel free to write an issue if you're having trouble using these (~please don't, they're a mess~).
 
@@ -59,7 +59,32 @@ Feel free to write an issue if you're having trouble using these (~please don't,
 
 
 
-## Installing the requirements (Arch-based)
+# Install
+
+``` $ git clone https://github.com/xo-xo-xo-xo/dotfiles ```  
+
+``` cd dotfiles ```  
+
+``` chmod +x install.sh ```  
+
+``` ./install.sh ```
+
+
+## Post-install
+
+There are some manual changes you must make to configs to suit your machine.
+
+* Set your own monitor ID in ~/.config/hypr/general.conf. Check the [hyprland wiki](https://wiki.hypr.land/Configuring/Monitors/) if you're lost.
+
+* Some programs requiring an extension (like code OSS) require a manual install of the extension.
+
+
+## WARNING ⚠️
+
+I don't currently recommend this script. I have only tested this on a virtual machine using an endeavorOS KDE image as a base. There may be some quirks you have to deal with. It's probably fine. Or not.
+
+
+## Manually installing the requirements (Arch-based)
 
 ``` $ yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swaync rofi wofi kvantum mpv tauon-music-box-git fish dolphin cliphist qt6ct nwg-look cava kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin python-pywal16 python-pywalfox qview waybar-module-pacman-updates-git```
 
@@ -89,7 +114,7 @@ Review the AUR packages yourself.
 
 - [x] GTK4
 - [x] Custom SwayNC
-- [ ] ~Installation script?~ nope
+- [x] (Very bad) installation script? 
 - [ ] Make a better color backend 
 - [ ] OBS
 - [x] ~Darkreader pywal fork~ Darkreader template
