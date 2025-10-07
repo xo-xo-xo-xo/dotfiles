@@ -1,0 +1,82 @@
+#Tauon Music Box theme file
+
+
+#-Backgrounds-----
+
+{background.rgb}		player background (top panel)
+{background.rgb}	  	playlist panel
+{background.rgb}		side panel
+{background.rgb}		bottom panel
+{background.rgb}        queue panel
+#11, 13, 15
+
+#-Playlist-------
+
+{foreground.rgb}		track line
+{foreground.rgb}		track time
+{foreground.rgb}		track index
+{color10.rgb}		track artist
+{color3.rgb}		album line
+
+{foreground.rgb}		track playing
+{color4.rgb}		index playing
+{color10.rgb}		artist playing
+{color3.rgb}		album playing
+{color4.rgb}		time playing
+
+{color3.rgb}		track missing
+
+{color6.rgb}		fav line
+{color10.rgb}		folder line
+{color3.rgb}		folder title
+#8,250,134
+
+{color3.rgb},127		playing highlight
+{color3.rgb},64		select highlight
+{foreground.rgb}		    gallery highlight
+
+#-Menu-------------
+{background.rgb}        menu background
+{color3.rgb}        menu highlight
+{color4.rgb}     menu text
+{color10.rgb}        menu disable text
+
+#-Bottom panel------
+
+{color10.rgb}		buttons off
+{color4.rgb}		buttons over
+{foreground.rgb}		buttons active
+
+{foreground.rgb}		playing time
+
+{color10.rgb}		seek bar
+{color10.rgb}		volume bar
+{color3.rgb},64		seek bg
+{color3.rgb},64	    volume bg
+{color10.rgb}		scroll bar
+
+{color10.rgb}		mode off
+{color4.rgb}		mode over
+{color3.rgb}		mode on
+
+{color4.rgb}		bottom title
+
+#-Top panel---------
+
+{color4.rgb}		tab active line
+{color4.rgb}		tab line
+{background.rgb}		tab background
+{color1.rgb}		tab over
+{color1.rgb}		tab active background
+{foreground.rgb}		music vis
+
+#-Side panel--------
+
+{color4.rgb}		title info
+{foreground.rgb}		extra info
+{color10.rgb}		art border
+
+#-Mini Mode---------
+
+{background.rgb}        mini bg
+{foreground.rgb}        mini border
