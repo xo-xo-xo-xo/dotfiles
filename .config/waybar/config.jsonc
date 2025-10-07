@@ -63,7 +63,7 @@
 },
 
 "custom/playerctl": {
-  "format": "<span color='#3c5660' rise='1150'></span> {}",
+  "format": "<span color='#504a5f' rise='1150'></span> {}",
   "exec": "~/scripts/playerctl.sh",
   "interval": 2,
   "return-type": "json",
@@ -90,17 +90,17 @@
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#4a6b6f' rise='1050'></span> {}%",
+    "format": "<span color='#7a3b42' rise='1050'></span> {}%",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#75858c' rise='1100' size='medium'> </span>{usage}%  ",
+    "format": "<span color='#555c69' rise='1100' size='medium'> </span>{usage}%  ",
     "max-length": 10
 },
 
 "custom/hw-drawer": {
-	"format": "<span color='#b6939e'>󰈐</span>",
+	"format": "<span color='#754e62'>󰈐</span>",
 	"tooltip-format": "System monitors",
    "orientation": "horizontal"
 },
@@ -110,18 +110,18 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "  <span color='#99a5af' rise='1100'></span> {temperatureC}°C  "
+    "format": "  <span color='#7d6b76' rise='1100'></span> {temperatureC}°C  "
 },
 
 "custom/gpu-usage": {
   "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
-  "format": "<span color='#a4b0b7' rise='1000'>󰍹</span> {}%  ",
+  "format": "<span color='#b88283' rise='1000'>󰍹</span> {}%  ",
   "return-type": "",
   "interval": 1
 },
 
 "custom/updates": {
-    "format": "<span color='#3c5660' size='medium' rise='1300'>󰮯</span> {}  ",
+    "format": "<span color='#504a5f' size='medium' rise='1300'>󰮯</span> {}  ",
     "return-type": "json",
   
     "exec-if": "which waybar-module-pacman-updates",
@@ -129,8 +129,8 @@
 },
 
    "clock": {
-      "format": "<span color='#4a6b6f' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
-      "format-alt": "<span color='#75858c'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#7a3b42' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
+      "format-alt": "<span color='#555c69'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -140,11 +140,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#b6939e'><b>{}</b></span>",
-            "days": "<span color='#99a5af'><b>{}</b></span>",
-            "weeks": "<span color='#a4b0b7'><b>W{}</b></span>",
-            "weekdays": "<span color='#3c5660'><b>{}</b></span>",
-            "today": "<span color='#4a6b6f'><b><u>{}</u></b></span>"
+            "months": "<span color='#754e62'><b>{}</b></span>",
+            "days": "<span color='#7d6b76'><b>{}</b></span>",
+            "weeks": "<span color='#b88283'><b>W{}</b></span>",
+            "weekdays": "<span color='#504a5f'><b>{}</b></span>",
+            "today": "<span color='#7a3b42'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -166,12 +166,12 @@
    },
    "custom/control-center": {
       "tooltip": false,
-      "format": "<span color='#75858c' size='larger'>󰂚</span> ",
+      "format": "<span color='#555c69' size='larger'>󰂚</span> ",
       "on-click": "swaync-client -t -sw",
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#b6939e' rise='1200'>󰌌</span> {}",
+      "format": "<span color='#754e62' rise='1200'>󰌌</span> {}",
       "format-en": "EN",
       "format-no": "NO",
       "tooltip": true
@@ -183,9 +183,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#99a5af' rise='1500'></span>",
-         "paused": "<span color='#a4b0b7'></span>",
-         "stopped": "<span color='#3c5660'></span>"
+         "playing": "<span color='#7d6b76' rise='1500'></span>",
+         "paused": "<span color='#b88283'></span>",
+         "stopped": "<span color='#504a5f'></span>"
       }
    },
    "tray": {
