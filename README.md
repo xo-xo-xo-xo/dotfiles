@@ -81,7 +81,7 @@ There are some manual changes you must make to configs to suit your machine.
 
 ## WARNING ⚠️
 
-I don't currently recommend this script. I have only tested this on a virtual machine using an endeavorOS KDE image as a base. There may be some quirks you have to deal with. It's probably fine. Or not.
+I don't currently recommend this script. It is non destructive, but I have only tested this on a virtual machine using an endeavorOS KDE image as a base. There may be some quirks you have to deal with. It's probably fine. Or not.
 
 
 ## Manually installing the requirements (Arch-based)
