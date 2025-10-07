@@ -55,7 +55,7 @@ Feel free to write an issue if you're having trouble using these (~please don't,
 | Theme generation | [pywal16](https://github.com/eylles/pywal16)
 | Discord theme generation | [pywal-discord](https://github.com/SnarkyDeveloper/pywal-discord)
 | Firefox theme generation | [pywalfox](https://addons.mozilla.org/en-US/firefox/addon/pywalfox/)
-
+| Firefox webpage theming | [darkreader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
 
 
 
@@ -74,7 +74,7 @@ Review the AUR packages yourself.
 * Nearly all of this is handled by waypaper's post command calling ```unified-theme.sh```, so waypaper is currently mandatory.
 
 
-| Reloads colors instantly        | Needs restart
+| Reloads colors instantly        | Needs manual intervention
 | :---------          | :-------  
 | Kitty/CLI apps             | mpv (history script added for restarts) 
 | Waybar     |  Qt/GTK
@@ -83,6 +83,7 @@ Review the AUR packages yourself.
 | Discord         | Obsidian
 | VS Code | Filepickers? not sure how to reload..
 | Tauon        | 4chanx/oneechan, need to re-import every generated theme
+|             | Darkreader, need to re-import the json every time.
 
   ## Todo
 
@@ -92,9 +93,9 @@ Review the AUR packages yourself.
 - [ ] Make a better color backend 
 - [ ] qBittorrent
 - [ ] OBS
-- [ ] Darkreader pywal fork
+- [x] ~Darkreader pywal fork~ Darkreader template
 - [x] Clean up scripts ~(especially symlinks)~. 
-- [ ] Consider switching to matugen, pywal is jank
+~- [ ] Consider switching to matugen, pywal is jank~
 
 ## Credit
 
