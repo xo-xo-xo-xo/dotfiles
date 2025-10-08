@@ -13,8 +13,10 @@ font-weight:600;
 window#waybar {
     all: unset;
     background-color: transparent;
-    margin: 8px 12px; /* Margin from screen edges: 8px top/bottom, 12px left/right */
+    margin: 8px 12px; 
 }
+
+
 
 .modules-left {
     margin: 2px 0px 2px 4px;
@@ -22,14 +24,13 @@ window#waybar {
 .modules-center {
     margin: 2px 0px 2px 0px;
 
-
-  /*  text-shadow: 5px 5px #1a1717; */
 }
 .modules-right {
     margin: 2px 2px 4px 0px;
 }
 
-/* Individual module styling */
+
+
 #workspaces,
 #mpris,
 #clock,
@@ -56,16 +57,13 @@ text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 
 }
 
-/* Workspace buttons */
+
 #workspaces button {
 background-color: transparent;
-padding: 0 6px;
-margin: 0 4px;
+padding: 0 4.5px;
+margin: 0 0px;
 
 }
-
-
-
 
 #pulseaudio-slider {
 background-color: alpha(@background, 0.7);
@@ -78,19 +76,25 @@ margin: 2px 1px;
 text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     
 }
+
+
 #pulseaudio-slider slider {
    
     min-width: 0px;
  min-height: 0px;
  border: 0px;
     box-shadow: none;
-    background-color: alpha (@foreground, 0.1);
+    background-color: alpha (@foreground, 0.5);
 }
+
+
 #pulseaudio-slider trough {
     min-height: 5px;
     min-width: 80px;
     border-radius: 5px;
   
+
+
    
 }
 #pulseaudio-slider highlight {
@@ -101,15 +105,13 @@ text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
 
-#custom-power{
-    font-size:20px;
-padding: 2px 3px 3px 2px
-
-}
 
 #custom-control-center{
     padding: 2px 0px 2px 4px
 }
+
+
+
 
 #workspaces button.active label {
 color: alpha(@color4, 1.0);
@@ -122,26 +124,40 @@ font-size: 16px;
     font-size:16px;
 }
 
-
-/* Hover effects */
-#workspaces:hover,
-#mpris:hover,
-#clock:hover,
-#pulseaudio:hover,
-#language:hover,
-#custom-control-center:hover,
-#workspaces button:hover {
-background-color: alpha(@background, 0.77); 
-color: @color2;
-border: 3px solid alpha(#0f0f0e, 0.5);
-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
-}
-
-
 #workspaces button:hover {
 background-color: transparent;
 color: @color2;
 }
+
+
+/* hover effects */
+#workspaces:hover,
+#mpris:hover,
+#clock:hover,
+#pulseaudio:hover,
+#tray:hover,
+#custom-gpu-usage:hover,
+#custom-updates:hover,
+#memory:hover,
+#cpu:hover,
+#temperature:hover,
+#network:hover,
+#custom-weather:hover,
+#custom-weather2:hover,
+#language:hover,
+#custom-control-center:hover,
+#workspaces button:hover {
+
+
+background-color: alpha(@background, 0.77); 
+color: @color2;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
+
+}
+
+
+
+/* tray */
 
 #tray #tray { 
 background-color: transparent;

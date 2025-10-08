@@ -62,7 +62,7 @@
     },
 
    "power-profiles-daemon": {
-  "format": "<span color='#7897c1'>{icon}</span>",
+  "format": "<span color='#bd8a99'>{icon}</span>",
   "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
   "tooltip": true,
   "format-icons": {
@@ -75,7 +75,7 @@
 
 "hyprland/workspaces": {
       "all-outputs": false,
-      "format": "{icon}",
+     
       "on-click": "activate",
       "persistent-only": "true",
      
@@ -99,7 +99,7 @@
 
 "network": {
     
-    "format": "  <span color='#7897c1' rise='1100'></span> {bandwidthUpBits}  <span color='#7897c1' rise='1100'></span> {bandwidthDownBits}",
+    "format": "<span color='#9578c1' rise='1100'></span> {bandwidthDownBits}  <span color='#7897c1' rise='1100'></span> {bandwidthUpBits} ",
     "max-length": 50
 },
 
@@ -122,12 +122,12 @@
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#bd8a99' rise='1050'></span> {}% ",
+    "format": "<span color='#9cbd8a' rise='1050'></span> {}% ",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#9578c1' rise='1100' size='medium'> </span>{usage}%   ",
+    "format": "<span color='#c1a978' rise='1100' size='medium'> </span>{usage}%   ",
     "max-length": 10
 },
 
@@ -136,12 +136,12 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "  <span color='#7897c1' rise='1100'></span> {temperatureC}°C"
+    "format": "  <span color='#bd8a99' rise='1100'></span> {temperatureC}°C"
 },
 
 "custom/gpu-usage": {
   "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
-  "format": "<span color='#9cbd8a' rise='1000'>󰍹</span> {}%   ",
+  "format": "<span color='#9578c1' rise='1000'>󰍹</span> {}%   ",
   "return-type": "",
   "interval": 1
 },
@@ -149,7 +149,7 @@
 
 
 "custom/updates": {
-    "format": "<span color='#c1a978' size='medium' rise='1300'>󰮯</span> {}   ",
+    "format": "<span color='#7897c1' size='medium' rise='1300'>󰮯</span> {}   ",
     "return-type": "json",
   
     "exec-if": "which waybar-module-pacman-updates",
