@@ -4,12 +4,12 @@ set -euo pipefail
 # ─── colors ───
 RED="\033[0;31m"; GREEN="\033[0;32m"; YELLOW="\033[1;33m"; BLUE="\033[0;34m"; RESET="\033[0m"
 
-echo "╭────────────────────────────╮"
-echo "│  💖✨ xo dotfiles ✨💖  │"
-echo "╰────────────────────────────╯"
+echo "╭─────────────────────╮"
+echo "│💖✨ xo dotfiles ✨💖│"
+echo "╰─────────────────────╯"
 echo
 
-# ─── disclaimer ───
+
 echo -e "${RED}DISCLAIMER:${RESET}"
 echo "this will copy the dotfiles to the appropriate locations, make scripts executable,"
 echo "create symlinks in directories, set a wallpaper, and install several packages, some from the AUR."
@@ -18,7 +18,7 @@ echo "by default, the script does a dry run, detailing what would be done."
 echo -e "${RED}no changes are made until running the script with the --apply flag.${RESET}"
 echo
 
-# ─── acknowledgement ───
+
 read -rp "do you want to continue? [y/N] " ack
 if [[ ! "$ack" =~ ^[Yy]$ ]]; then
     echo "aborting"
@@ -26,7 +26,7 @@ if [[ ! "$ack" =~ ^[Yy]$ ]]; then
 fi
 echo
 
-# ─── dry-run mode ───
+
 DRY_RUN=1
 [ "${1-}" == "--apply" ] && DRY_RUN=0
 echo "$( [ $DRY_RUN -eq 1 ] && echo '🧪 dry-run mode (default)' || echo ' install mode enabled!')"
@@ -35,7 +35,7 @@ echo
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKUP="$HOME/dotfiles-backup-$(date +%Y%m%d-%H%M%S)"
 
-# ─── package list ───
+
 OFFICIAL_PACKAGES=(hyprland hypridle hyprlock hyprshot waybar swaync rofi wofi mpv
     fish dolphin cliphist cava kitty ttf-nerd-fonts-symbols
     adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland
@@ -43,7 +43,7 @@ OFFICIAL_PACKAGES=(hyprland hypridle hyprlock hyprshot waybar swaync rofi wofi m
 AUR_PACKAGES=(kissfft-git heroic-games-launcher-bin waypaper waybar-module-pacman-updates-git nwg-look kvantum-qt5 qt6ct-kde ttf-material-design-icons-git qview wlogout python-pywal16 python-pywalfox hyprland-protocols-git tauon-music-box-git)
 
 
-# ─── package check ───
+
 
 pkgcheck(){
   local type="$1"; shift; local pkgs=("$@")
@@ -62,19 +62,19 @@ pkgcheck(){
   echo
 }
 
-echo "╭────────────────────────────╮"
-echo "│  💖✨ package check ✨💖  │"
-echo "╰────────────────────────────╯"
+echo "╭───────────────────────╮"
+echo "│💖✨ package check ✨💖│"
+echo "╰───────────────────────╯"
 echo
 
-# ─── show packages before confirmation ───
+
 
 echo -e "${BLUE}packages that would be installed:${RESET}"
 pkgcheck official "${OFFICIAL_PACKAGES[@]}"
 pkgcheck AUR "${AUR_PACKAGES[@]}"
 
 
-# ─── package install confirmation ───
+
 
 if [ "$DRY_RUN" -eq 0 ]; then
     echo -e "${RED}this script will be installing packages, some from the AUR.${RESET}"
@@ -87,12 +87,12 @@ if [ "$DRY_RUN" -eq 0 ]; then
 fi
 
 echo
-echo "╭────────────────────────────╮"
-echo "│  💖✨ backup & install ✨💖  │"
-echo "╰────────────────────────────╯"
+echo "╭──────────────────────────╮"
+echo "│💖✨ backup & install ✨💖│"
+echo "╰──────────────────────────╯"
 echo
 
-# ─── backup & copy ───
+
 
 echo -e "${BLUE} backup folder:${RESET} $BACKUP"
 [ $DRY_RUN -eq 0 ] && mkdir -p "$BACKUP"
@@ -120,12 +120,12 @@ copydir(){
 for d in .config .themes scripts; do copydir "$d"; done
 
 echo
-echo "╭────────────────────────────╮"
-echo "│  💖✨ chmod scripts ✨💖  │"
-echo "╰────────────────────────────╯"
+echo "╭───────────────────────╮"
+echo "│💖✨ chmod scripts ✨💖│"
+echo "╰───────────────────────╯"
 echo
 
-# ─── make scripts executable ───
+
 
 if [ $DRY_RUN -eq 0 ]; then
     chmod +x "$HOME/scripts/"*
@@ -135,11 +135,11 @@ elif [ $DRY_RUN -eq 1 ]; then
 fi
 
 
-echo "╭────────────────────────────╮"
-echo "│  💖✨ continued install ✨💖  │"
-echo "╰────────────────────────────╯"
+echo "╭───────────────────────────╮"
+echo "│💖✨ continued install ✨💖│"
+echo "╰───────────────────────────╯"
 echo
-# ─── copy prebuilt wal cache and run wal to set wallpaper ───
+
 if [ $DRY_RUN -eq 0 ]; then
     echo -e "copying prebuilt ${BLUE}.cache/wal...${RESET}"
     mkdir -p "$HOME/.cache"
@@ -154,9 +154,9 @@ elif [ $DRY_RUN -eq 1 ]; then
     echo -e "(${BLUE}dry-run:${RESET} would copy ${BLUE}.cache/wal ${RESET} and run wal to set wallpaper)${RESET}"
 fi
 
-echo "╭──────────────────────╮"
-echo "│  💖✨ symlinks ✨💖  "
-echo "╰──────────────────────╯"
+echo "╭──────────────────╮"
+echo "│💖✨ symlinks ✨💖|"
+echo "╰──────────────────╯"
 echo
 
 
@@ -181,16 +181,16 @@ for pair in "${SYMLINKS[@]}"; do
     echo -e " $src → $dst"
     [ $DRY_RUN -eq 0 ] && { mkdir -p "$(dirname "$dst")"; ln -sf "$src" "$dst"; }
 done
-[ $DRY_RUN -eq 1 ] && echo -e "${YELLOW}  (dry-run: no symlinks created)${RESET}"
+[ $DRY_RUN -eq 1 ] && echo -e "${YELLOW}(dry-run: no symlinks created)${RESET}"
 
-# ─── reminders ───
 
-echo -e "${RED} REMINDER:${RESET}"
-echo -e "there are some manual edits that must be made."
 
-# ─── final message ───
+echo -e "${RED}REMINDER:${RESET}"
+echo -e "there are some manual edits that must be made. check repository for more info."
+
+
 echo -e "💖 done! $( [ $DRY_RUN -eq 1 ] && echo 'dry-run. use --apply to execute.' || echo "backups created at $BACKUP")"
 
 if [ $DRY_RUN -eq 0 ]; then
-    echo " you can now exit to SDDM and start a hyprland session."
+    echo "you can now exit to SDDM and start a hyprland session."
 fi
