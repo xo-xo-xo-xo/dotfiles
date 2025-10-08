@@ -9,27 +9,29 @@ font-weight:600;
 }
 
 
-
 window#waybar {
     all: unset;
     background-color: transparent;
-    margin: 8px 12px; /* Margin from screen edges: 8px top/bottom, 12px left/right */
+    margin: 8px 12px; 
 }
+
 
 .modules-left {
     margin: 2px 0px 2px 4px;
 }
+
 .modules-center {
     margin: 2px 0px 2px 0px;
 
 
-  /*  text-shadow: 5px 5px #1a1717; */
-}
+ }
 .modules-right {
     margin: 2px 2px 4px 0px;
 }
 
-/* Individual module styling */
+
+
+
 #workspaces,
 #mpris,
 #clock,
@@ -38,7 +40,7 @@ window#waybar {
 #custom-control-center,
 #custom-power,
 #custom-playerctl,
-
+#cava,
 #window,
 #custom-weather,
 #custom-weather2,
@@ -47,23 +49,11 @@ window#waybar {
 background-color: alpha(@background, .81);
 border-radius: 5px;
 border: 2px solid alpha(#0f0f0e, 0.5);
-
 padding: 0px 4px 0px 4px;
 margin: 2px 1px;
 color: @foreground;
 text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
-
 }
-
-/* Workspace buttons */
-#workspaces button {
-background-color: transparent;
-padding: 0 6px;
-margin: 0 4px;
-
-}
-
-
 
 
 #pulseaudio-slider {
@@ -83,7 +73,7 @@ text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
  min-height: 0px;
  border: 0px;
     box-shadow: none;
-    background-color: alpha (@foreground, 0);
+    background-color: alpha (@foreground, 0.0);
 
 }
 #pulseaudio-slider trough {
@@ -96,7 +86,7 @@ text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 #pulseaudio-slider highlight {
     min-width: 5px;
     border-radius: 5px;
-    background-color: @color12;
+    background-color: @color11;
     
 }
 
@@ -112,7 +102,7 @@ padding: 2px 3px 3px 2px
 }
 
 #workspaces button.active label {
-color: alpha(@color4, 1.0);
+color: alpha(@color2, 1.0);
 font-size: 16px;
 }
 
@@ -122,8 +112,15 @@ font-size: 16px;
     font-size:16px;
 }
 
+#workspaces button {
+background-color: transparent;
+padding: 0 6px;
+margin: 0 0px;
 
-/* Hover effects */
+}
+
+
+
 #workspaces:hover,
 #mpris:hover,
 #clock:hover,
@@ -134,11 +131,13 @@ font-size: 16px;
 #cpu:hover,
 #custom-gpu-usage:hover,
 #temperature:hover,
+#custom-playerctl:hover,
+#window:hover,
 #pulseaudio-slider:hover,
 #workspaces button:hover {
 background-color: alpha(@background, 0.81); 
 color: @color2;
-border: 3px solid alpha(#0f0f0e, 0.5);
+border: 3px solid alpha(#0f0f0e, 0.1);
 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
 }
 

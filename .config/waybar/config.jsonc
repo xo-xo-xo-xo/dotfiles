@@ -8,19 +8,21 @@
  ///     "custom/power",
       "hyprland/workspaces",
       "hyprland/window"
+      
    ],
    "modules-center": [
-      "mpris",
+      
       "custom/playerctl"
+      
      
    ],
    "modules-right": [
       
       
-      "group/system",
+      
       "pulseaudio/slider",
       "hyprland/language",
-      "tray",
+      
       "clock",
       "custom/control-center"
    ],
@@ -44,7 +46,30 @@
     "separate-outputs": false
 },
 
-
+"cava": {
+        // "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 180,
+        "autosens": 1,
+        "sensitivity": 1,
+        "bars": 15,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "hide_on_silence": false,
+        // "format_silent": "quiet",
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
 
 "custom/weather": {
     "exec": "${HOME}/scripts/get-weather.sh Portland+Oregon",
@@ -63,7 +88,7 @@
 },
 
 "custom/playerctl": {
-  "format": "<span color='#504a5f' rise='1150'></span> {}",
+  "format": "<span color='#7897c1' rise='1150'></span> {}",
   "exec": "~/scripts/playerctl.sh",
   "interval": 2,
   "return-type": "json",
@@ -90,17 +115,17 @@
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#7a3b42' rise='1050'></span> {}%",
+    "format": "<span color='#9cbd8a' rise='1050'></span> {}%",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#555c69' rise='1100' size='medium'> </span>{usage}%  ",
+    "format": "<span color='#c1a978' rise='1100' size='medium'> </span>{usage}%  ",
     "max-length": 10
 },
 
 "custom/hw-drawer": {
-	"format": "<span color='#754e62'>󰈐</span>",
+	"format": "<span color='#bd8a99'>󰈐</span>",
 	"tooltip-format": "System monitors",
    "orientation": "horizontal"
 },
@@ -110,18 +135,18 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "  <span color='#7d6b76' rise='1100'></span> {temperatureC}°C  "
+    "format": "  <span color='#9578c1' rise='1100'></span> {temperatureC}°C  "
 },
 
 "custom/gpu-usage": {
   "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
-  "format": "<span color='#b88283' rise='1000'>󰍹</span> {}%  ",
+  "format": "<span color='#7897c1' rise='1000'>󰍹</span> {}%  ",
   "return-type": "",
   "interval": 1
 },
 
 "custom/updates": {
-    "format": "<span color='#504a5f' size='medium' rise='1300'>󰮯</span> {}  ",
+    "format": "<span color='#9cbd8a' size='medium' rise='1300'>󰮯</span> {}  ",
     "return-type": "json",
   
     "exec-if": "which waybar-module-pacman-updates",
@@ -129,8 +154,8 @@
 },
 
    "clock": {
-      "format": "<span color='#7a3b42' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
-      "format-alt": "<span color='#555c69'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#c1a978' rise='1380'></span> {:L%A %m/%d %I:%M %p}",
+      "format-alt": "<span color='#bd8a99'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -140,11 +165,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#754e62'><b>{}</b></span>",
-            "days": "<span color='#7d6b76'><b>{}</b></span>",
-            "weeks": "<span color='#b88283'><b>W{}</b></span>",
-            "weekdays": "<span color='#504a5f'><b>{}</b></span>",
-            "today": "<span color='#7a3b42'><b><u>{}</u></b></span>"
+            "months": "<span color='#9578c1'><b>{}</b></span>",
+            "days": "<span color='#7897c1'><b>{}</b></span>",
+            "weeks": "<span color='#9cbd8a'><b>W{}</b></span>",
+            "weekdays": "<span color='#c1a978'><b>{}</b></span>",
+            "today": "<span color='#bd8a99'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -166,12 +191,12 @@
    },
    "custom/control-center": {
       "tooltip": false,
-      "format": "<span color='#555c69' size='larger'>󰂚</span> ",
+      "format": "<span color='#9578c1' size='larger'>󰂚</span> ",
       "on-click": "swaync-client -t -sw",
       "escape": true
    },
    "hyprland/language": {
-      "format": "<span color='#754e62' rise='1200'>󰌌</span> {}",
+      "format": "<span color='#7897c1' rise='1200'>󰌌</span> {}",
       "format-en": "EN",
       "format-no": "NO",
       "tooltip": true
@@ -183,9 +208,9 @@
       "artist-len": 300,
       "title-len": 300,
       "status-icons": {
-         "playing": "<span color='#7d6b76' rise='1500'></span>",
-         "paused": "<span color='#b88283'></span>",
-         "stopped": "<span color='#504a5f'></span>"
+         "playing": "<span color='#9cbd8a' rise='1500'></span>",
+         "paused": "<span color='#c1a978'></span>",
+         "stopped": "<span color='#bd8a99'></span>"
       }
    },
    "tray": {
