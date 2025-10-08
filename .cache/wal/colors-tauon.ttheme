@@ -3,80 +3,80 @@
 
 #-Backgrounds-----
 
-21,9,17		player background (top panel)
-21,9,17	  	playlist panel
-21,9,17		side panel
-21,9,17		bottom panel
-21,9,17        queue panel
+23,23,17		player background (top panel)
+23,23,17	  	playlist panel
+23,23,17		side panel
+23,23,17		bottom panel
+23,23,17        queue panel
 #11, 13, 15
 
 #-Playlist-------
 
-196,193,195		track line
-196,193,195		track time
-196,193,195		track index
-122,59,66		track artist
-85,92,105		album line
+185,185,184		track line
+185,185,184		track time
+185,185,184		track index
+156,189,138		track artist
+193,169,120		album line
 
-196,193,195		track playing
-117,78,98		index playing
-122,59,66		artist playing
-85,92,105		album playing
-117,78,98		time playing
+185,185,184		track playing
+189,138,153		index playing
+156,189,138		artist playing
+193,169,120		album playing
+189,138,153		time playing
 
-85,92,105		track missing
+193,169,120		track missing
 
-184,130,131		fav line
-122,59,66		folder line
-85,92,105		folder title
+120,188,193		fav line
+156,189,138		folder line
+193,169,120		folder title
 #8,250,134
 
-85,92,105,127		playing highlight
-85,92,105,64		select highlight
-196,193,195		    gallery highlight
+193,169,120,127		playing highlight
+193,169,120,64		select highlight
+185,185,184		    gallery highlight
 
 #-Menu-------------
-21,9,17        menu background
-85,92,105        menu highlight
-117,78,98     menu text
-122,59,66        menu disable text
+23,23,17        menu background
+193,169,120        menu highlight
+189,138,153     menu text
+156,189,138        menu disable text
 
 #-Bottom panel------
 
-122,59,66		buttons off
-117,78,98		buttons over
-196,193,195		buttons active
+156,189,138		buttons off
+189,138,153		buttons over
+185,185,184		buttons active
 
-196,193,195		playing time
+185,185,184		playing time
 
-122,59,66		seek bar
-122,59,66		volume bar
-85,92,105,64		seek bg
-85,92,105,64	    volume bg
-122,59,66		scroll bar
+156,189,138		seek bar
+156,189,138		volume bar
+193,169,120,64		seek bg
+193,169,120,64	    volume bg
+156,189,138		scroll bar
 
-122,59,66		mode off
-117,78,98		mode over
-85,92,105		mode on
+156,189,138		mode off
+189,138,153		mode over
+193,169,120		mode on
 
-117,78,98		bottom title
+189,138,153		bottom title
 
 #-Top panel---------
 
-117,78,98		tab active line
-117,78,98		tab line
-21,9,17		tab background
-80,74,95		tab over
-80,74,95		tab active background
-196,193,195		music vis
+189,138,153		tab active line
+189,138,153		tab line
+23,23,17		tab background
+120,151,193		tab over
+120,151,193		tab active background
+185,185,184		music vis
 
 #-Side panel--------
 
-117,78,98		title info
-196,193,195		extra info
-122,59,66		art border
+189,138,153		title info
+185,185,184		extra info
+156,189,138		art border
 
 #-Mini Mode---------
 
-21,9,17        mini bg
-196,193,195        mini border
+23,23,17        mini bg
+185,185,184        mini border

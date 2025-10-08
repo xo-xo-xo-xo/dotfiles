@@ -1,0 +1,24 @@
+wallpaper: "wildrose.jpg"
+
+special:
+    background: "#171711"
+    foreground: "#B9B9B8"
+    cursor: "#B9B9B8"
+
+colors:
+    color0: "#171711"
+    color1: "#7897c1"
+    color2: "#9cbd8a"
+    color3: "#c1a978"
+    color4: "#bd8a99"
+    color5: "#9578c1"
+    color6: "#78bcc1"
+    color7: "#95aec7"
+    color8: "#171711"
+    color9: "#7897c1"
+    color10: "#9cbd8a"
+    color11: "#c1a978"
+    color12: "#bd8a99"
+    color13: "#9578c1"
+    color14: "#78bcc1"
+    color15: "#95aec7"

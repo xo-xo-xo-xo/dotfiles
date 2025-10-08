@@ -1,23 +1,23 @@
 .theme-dark {
-    --background-primary: #150911 !important;
-    --background-secondary: #150911 !important;
-    --titlebar-background-focused: #150911 !important;
-    --background-modifier-form-field: #150911 !important;
-    --background-modifier-border-focus: #504a5f33 !important;
-    --divider-color: #504a5f33 !important;
-    --background-modifier-cover: #150911 !important;
-    --prompt-border-color: #504a5f33 !important;
-    --layer-1: #504a5f33 !important;
-    --background-modifier-border: #504a5f77 !important;
+    --background-primary: #171711 !important;
+    --background-secondary: #171711 !important;
+    --titlebar-background-focused: #171711 !important;
+    --background-modifier-form-field: #171711 !important;
+    --background-modifier-border-focus: #7897c133 !important;
+    --divider-color: #7897c133 !important;
+    --background-modifier-cover: #171711 !important;
+    --prompt-border-color: #7897c133 !important;
+    --layer-1: #7897c133 !important;
+    --background-modifier-border: #7897c177 !important;
     --interactive-normal: var(--layer-1) !important;
-    --text-faint: #504a5f77 !important;
-    --background-modifier-border-hover: #504a5f33 !important;
-    --indentation-guide-color: #504a5f33 !important;
-    --indentation-guide-color-active: #504a5f77 !important;
+    --text-faint: #7897c177 !important;
+    --background-modifier-border-hover: #7897c133 !important;
+    --indentation-guide-color: #7897c133 !important;
+    --indentation-guide-color-active: #7897c177 !important;
 }
 
 .theme-dark .nav-folder-title-content::before {
-    color: #504a5f77 !important;
+    color: #7897c177 !important;
 }
 
 body {

@@ -1,0 +1,28 @@
+{
+    "checksum": "cbe2a949d1a83bf288e2a67f2d21f526",
+    "wallpaper": "/home/xo/Pictures/BG/1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#150911",
+        "foreground": "#c4c1c3",
+        "cursor": "#c4c1c3"
+    },
+    "colors": {
+        "color0": "#150911",
+        "color1": "#504a5f",
+        "color2": "#7a3b42",
+        "color3": "#555c69",
+        "color4": "#754e62",
+        "color5": "#7d6b76",
+        "color6": "#b88283",
+        "color7": "#c4c1c3",
+        "color8": "#6c5866",
+        "color9": "#504a5f",
+        "color10": "#7a3b42",
+        "color11": "#555c69",
+        "color12": "#754e62",
+        "color13": "#7d6b76",
+        "color14": "#b88283",
+        "color15": "#c4c1c3"
+    }
+}

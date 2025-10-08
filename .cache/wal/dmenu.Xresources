@@ -1,5 +1,5 @@
 dmenu.font:          Mononoki Nerd Font:size=14
-dmenu.background:    #150911
-dmenu.foreground:    #c4c1c3
-dmenu.selbackground: #7a3b42
-dmenu.selforeground: #150911
+dmenu.background:    #171711
+dmenu.foreground:    #95aec7
+dmenu.selbackground: #9cbd8a
+dmenu.selforeground: #171711

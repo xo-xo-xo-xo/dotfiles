@@ -1,37 +1,37 @@
 body.pywal{
-  --accent: #504a5f;
-  --accent-overlay: #504a5f;
-  --navbar-accent: #c4c1c3;
-  --background: #150911;
-  --body-background: #150911;
+  --accent: #7897c1;
+  --accent-overlay: #7897c1;
+  --navbar-accent: #95aec7;
+  --background: #171711;
+  --body-background: #171711;
   --background-darker: var(--body-background);
   --current-background: var(--body-background);
-  --navbar-background: #150911;
-  --navbar-active-background: #150911;
+  --navbar-background: #171711;
+  --navbar-active-background: #171711;
   --gradient-body-background: linear-gradient(
     90deg,
     var(--background-darker) -32px,
     var(--body-background) 64px,
     var(--body-background) 100%
   );
-  --input-background: #150911;
+  --input-background: #171711;
   --modal-background: var(--body-background);
   --modal-border: var(--body-background);
-  --success: #754e62;
-  --success-hover: #7a3b42;
-  --primary: #7d6b76;
-  --primary-hover: #150911;
-  --danger: #504a5f;
-  --danger-hover: #7a3b42;
-  --anticheat-denied: #504a5f;
-  --anticheat-broken: #504a5f;
-  --anticheat-running: #7d6b76;
-  --anticheat-supported: #b88283;
-  --anticheat-planned: #7d6b76;
-  --text-title: #c4c1c3;
-  --icons-background: #150911;
-  --action-icon: #c4c1c3;
-  --action-icon-hover: #555c69;
-  --action-icon-active: #555c69;
-  --icon-disabled: #6c5866;
+  --success: #bd8a99;
+  --success-hover: #9cbd8a;
+  --primary: #9578c1;
+  --primary-hover: #171711;
+  --danger: #7897c1;
+  --danger-hover: #9cbd8a;
+  --anticheat-denied: #7897c1;
+  --anticheat-broken: #7897c1;
+  --anticheat-running: #9578c1;
+  --anticheat-supported: #78bcc1;
+  --anticheat-planned: #9578c1;
+  --text-title: #B9B9B8;
+  --icons-background: #171711;
+  --action-icon: #B9B9B8;
+  --action-icon-hover: #c1a978;
+  --action-icon-active: #c1a978;
+  --icon-disabled: #171711;
 }

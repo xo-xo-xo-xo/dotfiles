@@ -1,11 +1,11 @@
 * {
-	wallpaper: "/home/xo/Pictures/BG/1340907373521.jpg";
+	wallpaper: "wildrose.jpg";
     
-	active-background: #504a5f;
+	active-background: #7897c1;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #754e62;
+    urgent-background: #bd8a99;
     urgent-foreground: @foreground;
 	
     alternate-active-background: @background;
@@ -15,15 +15,15 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #754e62;
+    selected-active-background: #bd8a99;
     selected-active-foreground: @foreground;
-    selected-normal-background: #7a3b42;
+    selected-normal-background: #9cbd8a;
     selected-normal-foreground: @foreground;
-    selected-urgent-background: #c4c1c3;
+    selected-urgent-background: #95aec7;
     selected-urgent-foreground: @background;
 
-    background: #150911;
-    foreground: #c4c1c3;
+    background: #171711;
+    foreground: #B9B9B8;
     border-color: @foreground;
 
 	// General settings
