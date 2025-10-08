@@ -104,10 +104,9 @@ Some manual changes are needed to fit your setup:
 <br>
 
 ```bash
-yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swww swaync rofi wofi \
-kvantum mpv tauon-music-box-git fish dolphin cliphist qt6ct nwg-look cava \
-kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts fastfetch \
-xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin \
+yay -S hyprland hypridle hyprlock hyprshot wlogout waybar swww swaync rofi wofi kvantum mpv tauon-music-box-git fish dolphin cliphist
+qt6ct-kde nwg-look cava kitty ttf-nerd-fonts-symbols adobe-source-han-sans-jp-fonts
+fastfetch xdg-desktop-portal-hyprland code waypaper heroic-games-launcher-bin 
 python-pywal16 python-pywalfox qview waybar-module-pacman-updates-git
 ```
 
