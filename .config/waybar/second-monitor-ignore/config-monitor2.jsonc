@@ -6,7 +6,13 @@
    "reload_style_on_change": true,
 
    "modules-left": [
- "group/system"
+      
+      "hyprland/workspaces",
+      "group/system",
+      "network",
+     "custom/weather",
+ "custom/weather2",
+ "tray"
    ],
    "modules-center": [
       "clock"
@@ -16,8 +22,8 @@
 
    ],
    "clock": {
-      "format": "<span color='#7d6b76' rise='1500'> </span>{:L%A %m/%d <span color='#b88283' rise='1200'>  </span>%I:%M %p}",
-      "format-alt": "<span color='#504a5f'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#7897c1' rise='1500'> </span>{:L%A %m/%d <span color='#9cbd8a' rise='1200'>  </span>%I:%M %p}",
+      "format-alt": "<span color='#c1a978'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -27,11 +33,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#7a3b42'><b>{}</b></span>",
-            "days": "<span color='#555c69'><b>{}</b></span>",
-            "weeks": "<span color='#754e62'><b>W{}</b></span>",
-            "weekdays": "<span color='#7d6b76'><b>{}</b></span>",
-            "today": "<span color='#b88283'><b><u>{}</u></b></span>"
+            "months": "<span color='#bd8a99'><b>{}</b></span>",
+            "days": "<span color='#9578c1'><b>{}</b></span>",
+            "weeks": "<span color='#7897c1'><b>W{}</b></span>",
+            "weekdays": "<span color='#9cbd8a'><b>{}</b></span>",
+            "today": "<span color='#c1a978'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -41,25 +47,87 @@
       }
    },
 
+       "custom/wlsunset": {
+        "interval": "once",
+        "exec": "if pgrep wlsunset >/dev/null 2>&1; then stdbuf -oL printf '{\"alt\": \"on\"}'; else stdbuf -oL printf '{\"alt\": \"off\"}'; fi",
+        "on-click": "sh ~/scripts/wlsunset.sh",
+        "signal": 1, // SIGRTMIN+1 or 35
+        "return-type": "json",
+        "format": "{icon}",
+        "tooltip-format": "wlsunset: {alt}",
+        "format-icons": {
+            "off": "☀️",
+            "on": "🌙"
+        }
+    },
+
+   "power-profiles-daemon": {
+  "format": "<span color='#7897c1'>{icon}</span>",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  }
+},
+
+"hyprland/workspaces": {
+      "all-outputs": false,
+      "format": "{icon}",
+      "on-click": "activate",
+      "persistent-only": "true",
+     
+   },
+
+
+
+
    "group/system": {
 	"orientation": "inherit",
 	"modules": [
-	   "custom/updates",
+	   "custom/cpuhistory",
+      "custom/updates",
       "custom/gpu-usage",
 		"cpu",
 		"memory",
 		"temperature"
+    
 	]
+},
+
+"network": {
+    
+    "format": "  <span color='#7897c1' rise='1100'></span> {bandwidthUpBits}  <span color='#7897c1' rise='1100'></span> {bandwidthDownBits}",
+    "max-length": 50
+},
+
+
+"custom/weather": {
+    "exec": "${HOME}/scripts/get-weather.sh Portland+Oregon",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 1200
+},
+
+"custom/weather2": {
+    "exec": "${HOME}/scripts/get-weather.sh Kristiansand+Norway",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 1200
 },
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#7a3b42' rise='1050'></span> {}% ",
+    "format": "<span color='#bd8a99' rise='1050'></span> {}% ",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#555c69' rise='1100' size='medium'> </span>{usage}%   ",
+    "format": "<span color='#9578c1' rise='1100' size='medium'> </span>{usage}%   ",
     "max-length": 10
 },
 
@@ -68,25 +136,31 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "  <span color='#7d6b76' rise='1100'></span> {temperatureC}°C"
+    "format": "  <span color='#7897c1' rise='1100'></span> {temperatureC}°C"
 },
 
 "custom/gpu-usage": {
   "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
-  "format": "<span color='#b88283' rise='1000'>󰍹</span> {}%   ",
+  "format": "<span color='#9cbd8a' rise='1000'>󰍹</span> {}%   ",
   "return-type": "",
   "interval": 1
 },
 
+
+
 "custom/updates": {
-    "format": "<span color='#504a5f' size='medium' rise='1300'>󰮯</span> {}   ",
+    "format": "<span color='#c1a978' size='medium' rise='1300'>󰮯</span> {}   ",
     "return-type": "json",
   
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --interval-seconds 5 --no-aur --network-interval-seconds 300"
 },
 
-
+  "tray": {
+      "icon-size": 16,
+      "spacing": 10
+   },
+   
    "hyprland/workspaces": {
       "all-outputs": false,
       "format": "{icon}",

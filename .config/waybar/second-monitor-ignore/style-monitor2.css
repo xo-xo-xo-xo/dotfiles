@@ -38,6 +38,12 @@ window#waybar {
 #custom-control-center,
 #custom-power,
 #system,
+#custom-weather,
+#network,
+#power-profiles-daemon,
+#custom-cpuhistory,
+#custom-weather2,
+#custom-wlsunset,
 #tray{
 background-color: alpha(@background, 0.7);
 border-radius: 5px;
