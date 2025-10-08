@@ -1,7 +1,6 @@
 # Personal use dotfiles 
 
-Hyprland dots with a focus on dynamically theming every program I use with pywal and waypaper post_commands.
-
+Hyprland dots with a focus on dynamically theming every program through pywal.
  Feel free to write an issue if you're having trouble using these (~please don't, they're a mess~).
 
 ---
