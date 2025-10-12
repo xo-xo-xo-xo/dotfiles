@@ -1,0 +1,25 @@
+[default]
+
+exec = "/home/xo/scripts/wpaperhook.sh"
+path ="/home/xo/Pictures/BG/wild.png"
+
+transition = "ripple"
+transition-duration = "0.8s"
+ripple-amplitude = 0.04
+ripple-resolution = 800
+
+[DP-5]
+path = "/home/xo/Pictures/BG/best/"
+sorting = "ascending"
+transition = "ripple"
+transition-duration = "0.8s"
+ripple-amplitude = 0.04
+ripple-resolution = 800
+
+[DP-3]
+path = "/home/xo/Pictures/BG/best/"
+sorting = "ascending"
+transition = "ripple"
+transition-duration = "0.8s"
+ripple-amplitude = 0.04
+ripple-resolution = 800
