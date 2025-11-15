@@ -47,6 +47,7 @@ Hyprland dots with a focus on dynamically theming every program through pywal.
 | MPD scrobbling support | [mpdscribble](https://github.com/MusicPlayerDaemon/mpdscribble)
 | Audio visualizer (rmpc) | [cava](https://github.com/karlstav/cava)
 | Media player | [mpv (with custom OSC)](https://github.com/Samillion/ModernZ) 
+| Media player (streaming) [stremio enhanced](https://github.com/REVENGE977/stremio-enhanced)
 | Game launcher | [heroic games launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)
 | Text editor | [code oss](https://github.com/microsoft/vscode) + [pywal extension](https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme) 
 | Markdown notes | [obsidian](https://obsidian.md/)
@@ -145,7 +146,7 @@ python-pywal16 python-pywalfox qview waybar-module-pacman-updates-git
 | Discord           | Obsidian |
 | VS Code           | Filepickers? not sure how to reload.. |
 | Tauon (thanks Taiko2k)           | 4chanX / Oneechan *(re-import JSON)* |
-|                   | DarkReader *(re-import JSON)* |
+| Stremio Enhanced                   | DarkReader *(re-import JSON)* |
 
 <br><br>
 
