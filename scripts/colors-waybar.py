@@ -15,7 +15,7 @@ def load_colors(css_file):
 def replace_colors(config_str, available_colors):
     """Replace standalone hex color codes with hex values from CSS."""
     # Use colors at indices 2, 4, 6, 8 (0-based: 3rd, 5th, 7th, 9th colors)
-    color_indices = [1,2,3,4,5,6]
+    color_indices = [1,2,3,4,5]
     color_cycle = [available_colors[i] for i in color_indices if i < len(available_colors)]  # Ensure indices are valid
     if not color_cycle:
         return config_str  # Return unchanged if no valid colors

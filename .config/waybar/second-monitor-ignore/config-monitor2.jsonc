@@ -10,9 +10,7 @@
       "hyprland/workspaces",
       "group/system",
       "network",
-     "custom/weather",
- "custom/weather2",
- "tray"
+  "tray"
    ],
    "modules-center": [
       "clock"
@@ -22,8 +20,8 @@
 
    ],
    "clock": {
-      "format": "<span color='#7897c1' rise='1500'> </span>{:L%A %m/%d <span color='#9cbd8a' rise='1200'>  </span>%I:%M %p}",
-      "format-alt": "<span color='#c1a978'>{:%Y-%m-%d}</span>",
+      "format": "<span color='#75624c' rise='1500'> </span>{:L%A %m/%d <span color='#716366' rise='1200'>  </span>%I:%M %p}",
+      "format-alt": "<span color='#847158'>{:%Y-%m-%d}</span>",
       "interval": 1,
       "tooltip-format": "<tt>{calendar}</tt>",
       "smooth-scrolling-threshold": 0.01,
@@ -33,11 +31,11 @@
          "weeks-pos": "right",
          "on-scroll": 1,
          "format": {
-            "months": "<span color='#bd8a99'><b>{}</b></span>",
-            "days": "<span color='#9578c1'><b>{}</b></span>",
-            "weeks": "<span color='#7897c1'><b>W{}</b></span>",
-            "weekdays": "<span color='#9cbd8a'><b>{}</b></span>",
-            "today": "<span color='#c1a978'><b><u>{}</u></b></span>"
+            "months": "<span color='#9f8b78'><b>{}</b></span>",
+            "days": "<span color='#bdaa98'><b>{}</b></span>",
+            "weeks": "<span color='#75624c'><b>W{}</b></span>",
+            "weekdays": "<span color='#716366'><b>{}</b></span>",
+            "today": "<span color='#847158'><b><u>{}</u></b></span>"
          }
       },
       "actions": {
@@ -62,7 +60,7 @@
     },
 
    "power-profiles-daemon": {
-  "format": "<span color='#bd8a99'>{icon}</span>",
+  "format": "<span color='#9f8b78'>{icon}</span>",
   "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
   "tooltip": true,
   "format-icons": {
@@ -99,7 +97,7 @@
 
 "network": {
     
-    "format": "<span color='#9578c1' rise='1100'></span> {bandwidthDownBits}  <span color='#7897c1' rise='1100'></span> {bandwidthUpBits} ",
+    "format": "<span color='#bdaa98' rise='1100'></span> {bandwidthDownBits}  <span color='#75624c' rise='1100'></span> {bandwidthUpBits} ",
     "max-length": 50
 },
 
@@ -122,12 +120,12 @@
 
 "memory": {
     "interval": 30,
-    "format": "<span color='#9cbd8a' rise='1050'></span> {}% ",
+    "format": "<span color='#716366' rise='1050'></span> {}% ",
     "max-length": 10
 },
 "cpu": {
     "interval": 10,
-    "format": "<span color='#c1a978' rise='1100' size='medium'> </span>{usage}%   ",
+    "format": "<span color='#847158' rise='1100' size='medium'> </span>{usage}%   ",
     "max-length": 10
 },
 
@@ -136,12 +134,12 @@
     "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "  <span color='#bd8a99' rise='1100'></span> {temperatureC}°C"
+    "format": "  <span color='#9f8b78' rise='1100'></span> {temperatureC}°C"
 },
 
 "custom/gpu-usage": {
   "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
-  "format": "<span color='#9578c1' rise='1000'>󰍹</span> {}%   ",
+  "format": "<span color='#bdaa98' rise='1000'>󰍹</span> {}%   ",
   "return-type": "",
   "interval": 1
 },
@@ -149,7 +147,7 @@
 
 
 "custom/updates": {
-    "format": "<span color='#7897c1' size='medium' rise='1300'>󰮯</span> {}   ",
+    "format": "<span color='#75624c' size='medium' rise='1300'>󰮯</span> {}   ",
     "return-type": "json",
   
     "exec-if": "which waybar-module-pacman-updates",
@@ -166,8 +164,8 @@
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-         "1": "<span font_size='12pt'></span>",
-         "2": "<span font_size='14pt'></span>",
+         "5": "<span font_size='12pt'>󰭹</span>",
+         "6": "<span font_size='14pt'></span>",
          "3": "<span font_size='12pt'>󱎓</span>",
          "4": "<span font_size='12pt'></span>"
       }

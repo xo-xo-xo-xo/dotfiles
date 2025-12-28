@@ -22,7 +22,7 @@ ln -sf "$WAL_CACHE_DIR/${TEMPLATE}.kvconfig" "$KV_THEME_DIR/${THEME}.kvconfig"
 ln -sf "$WAL_CACHE_DIR/${TEMPLATE}.svg" "$KV_THEME_DIR/${THEME}.svg"
 kvantummanager --set "$THEME" || true
 
-# mpv (why)
+# mpv (why did i do this)
 
 TEMPLATE_FILE="$HOME/.config/mpv/script-opts/modernz.conf.template"
 OUTPUT_FILE="$HOME/.config/mpv/script-opts/modernz.conf"
@@ -44,19 +44,23 @@ if [ -f "$TEMPLATE_FILE" ] && [ -f "$COLORS_FILE" ]; then
     > "$OUTPUT_FILE"
 fi
 
-# tauon
+# reload tauon
 
 curl -s http://localhost:7813/reloadtheme >/dev/null || true
 
-# save
-cp "$WALLPAPER" "$HOME/.local/share/wallpaper.jpg"
+
+# i don't know why this doesn't work
+
+gsettings set org.gnome.desktop.interface gtk-theme ""
+    sleep 0.1
+    gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
+
+#vm jank
+   
+cp ~/.cache/wal/yasb.css ~/share/dots/styles.css
 
 # gui
 
-pkill kded6 || true
-killall swaync waybar || true
-swaync &
-waybar &
-waybar -c ~/.config/waybar/config-monitor2.jsonc -s ~/.config/waybar/style-monitor2.css &
+pkill kded6; killall swaync; swaync; killall waybar; waybar; waybar -c ~/.config/waybar/config-monitor2.jsonc -s ~/.config/waybar/style-monitor2.css
 
-gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3" || true
+
