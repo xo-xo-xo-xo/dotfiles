@@ -40,7 +40,7 @@ OFFICIAL_PACKAGES=(hyprland hypridle hyprlock hyprshot waybar swaync rofi wofi m
     fish dolphin cliphist cava kitty ttf-nerd-fonts-symbols
     adobe-source-han-sans-jp-fonts fastfetch xdg-desktop-portal-hyprland
     code)
-AUR_PACKAGES=(kissfft-git heroic-games-launcher-bin waypaper waybar-module-pacman-updates-git nwg-look kvantum-qt5 qt6ct-kde ttf-material-design-icons-git qview wlogout python-pywal16 python-pywalfox hyprland-protocols-git tauon-music-box-git)
+AUR_PACKAGES=(kissfft-git heroic-games-launcher-bin waypaper waybar-module-pacman-updates-git nwg-look qt6ct-kde ttf-material-design-icons-git qview wlogout python-pywal16 python-pywalfox hyprland-protocols tauon-music-box-git)
 
 
 
