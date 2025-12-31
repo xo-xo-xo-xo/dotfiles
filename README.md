@@ -8,6 +8,9 @@ hyprland dots with a focus on dynamically theming every program through pywal.
 
 ### screenshots
 <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+ <img width="5121" height="320" alt="2025-12-31-054516_hyprshot" src="https://github.com/user-attachments/assets/bbf1a098-28e5-4128-a20e-eec5e54362f6" />
+<img width="5115" height="320" alt="2025-12-31-053700_hyprshot" src="https://github.com/user-attachments/assets/22ab92f9-5b4b-4654-9549-d6d35207f81b" />
+
   <img src="https://github.com/user-attachments/assets/1870fb13-1030-4ba6-a647-af62a1db6b80" width="320" />
   <img src="https://github.com/user-attachments/assets/261dc9da-b633-4c65-8823-2bd6949e89a8" width="320" />
   <img src="https://github.com/user-attachments/assets/261cc2f3-d0fd-404f-86f2-a8e93e086d02" width="320" />
